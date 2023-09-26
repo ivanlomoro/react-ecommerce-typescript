@@ -1,15 +1,4 @@
-*{
-    box-sizing: border-box;
-}
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'Montserrat';
-    margin: 0;
-}
 .contenedor{
     max-width: 1400px;
     margin:auto;
@@ -54,6 +43,7 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+    font-family: 'Montserrat';
 }
 
 header a:hover{
@@ -63,7 +53,7 @@ header a:hover{
 }
 
 header .carrito {
-    margin-left: auto; /* Mueve el carrito hacia la derecha */
+    margin-left: auto; 
     display: flex;
     align-items: center;
 }
