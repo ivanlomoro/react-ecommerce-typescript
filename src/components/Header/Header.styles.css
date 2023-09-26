@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+.contenedor{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+    top: 0px;  
+    position: sticky;
+    z-index: 10;
+}
+
+header .img{
+    display: inline-block;
+}
+
+header .icono{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+    font-size: 26px;
+}
+
+
+header .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 0;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(255, 136, 0);
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+header .carrito {
+    margin-left: auto; /* Mueve el carrito hacia la derecha */
+    display: flex;
+    align-items: center;
+}
