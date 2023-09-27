@@ -17,16 +17,16 @@ export function StoreProduct ({id,name,price,imgUrl}:StoreProductsProps){
             <img 
                 className="card-img-top"
                 src={imgUrl}
-                height="200px"
-                style={ {objectFit: "cover"}}
+                height="250px"
+                style={ {objectFit: "contain"}}
                 />
             <div className="card-body d-flex flex-column">
                 <div className="card-title d-flex justify-content-between align-items-baseline mb-4">
-                    <span className="fs-2">{name}</span>
-                    <span className="ms-2 text-muted">{formatCurrency(price)}</span>
+                    <span className="fs-2 align-items">{name}</span>
+                    <span className="ms-2 text-bold">{formatCurrency(price)}</span>
                 </div>
                 <div className="mt-auto">
-                   {quantity === 0 ? ( <button className="w-100" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
+                   {quantity === 0 ? ( <button onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
                    ) : <div className="d-flex align-items-center flex-column" style={{ gap: ".5rem"}}>
                             <div className="d-flex align-items-center justify-content-center" style={{ gap: ".5rem"}}>
                                 <button onClick={() => decreaseCartQuantity(id)}>-</button>

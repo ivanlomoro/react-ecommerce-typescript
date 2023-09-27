@@ -47,7 +47,7 @@ header a{
 }
 
 header a:hover{
-    color: rgb(255, 136, 0);
+    color: #FECE00;
     transition: 0.5s;
     border-radius: 15px;
 }

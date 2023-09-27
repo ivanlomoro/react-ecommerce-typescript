@@ -14,7 +14,7 @@ export function CardProduct ({ id, quantity }: CardProductProps){
 
     return (
         <div className="hstack gap-2 d-flex align-items-center">
-            <img src={product.imgUrl} style={{width: "125px", height: "75px", objectFit:"cover"}}/>   
+            <img src={product.imgUrl} style={{width: "125px", height: "75px", objectFit:"contain"}}/>   
         <div className="me-auto">
             <div>
                 {product.name}{" "}

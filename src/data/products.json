@@ -1,26 +1,212 @@
 [
     {
         "id": 1,
-        "name":"Book",
-        "price":10.99,
-        "imgUrl": "/imgs/book.jpg"
+        "name":"Yami Yugi",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime1.jpg",
+        "category": 1
     },
     {
         "id": 2,
-        "name":"Computer",
-        "price":1199,
-        "imgUrl": "/imgs/computer.jpg"
+        "name":"Seto Kaiba",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime2.jpg",
+        "category": 1
     },
     {
         "id": 3,
-        "name":"Banana",
-        "price":1.99,
-        "imgUrl": "/imgs/banana.jpg"
+        "name":"Goku",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime3.jpg",
+        "category": 1
     },
     {
         "id": 4,
-        "name":"Car",
-        "price":8999,
-        "imgUrl": "/imgs/car.jpg"
+        "name":"Trunks",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime4.jpg",
+        "category": 1
+    },
+    {
+        "id": 5,
+        "name":"Homer",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime5.jpg",
+        "category": 1
+    },
+    {
+        "id": 6,
+        "name":"Hugo",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/animation/anime6.jpg",
+        "category": 1
+    },
+    {
+        "id": 7,
+        "name":"Harry Potter",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp1.jpg",
+        "category": 2
+    },
+    {
+        "id": 8,
+        "name":"Dobby",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp2.jpg",
+        "category": 2
+    },
+    {
+        "id": 9,
+        "name":"Ron",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp3.jpg",
+        "category": 2
+    },
+    {
+        "id": 10,
+        "name":"Hermione",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp4.jpg",
+        "category": 2
+    },
+    {
+        "id": 11,
+        "name":"Hagrid",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp5.jpg",
+        "category": 2
+    },
+    {
+        "id": 12,
+        "name":"Dumbledore",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/hp/hp6.jpg",
+        "category": 2
+    },
+    {
+        "id": 13,
+        "name":"Spider-Man",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel1.jpg",
+        "category": 3
+    },
+    {
+        "id": 14,
+        "name":"Iron Man",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel2.jpg",
+        "category": 3
+    },
+    {
+        "id": 15,
+        "name":"Thor",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel3.jpg",
+        "category": 3
+    },
+    {
+        "id": 16,
+        "name":"Groot",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel4.jpg",
+        "category": 3
+    },
+    {
+        "id": 17,
+        "name":"Black Panther",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel5.jpg",
+        "category": 3
+    },
+    {
+        "id": 18,
+        "name":"Thanos",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/marvel/marvel6.jpg",
+        "category": 3
+    },
+    {
+        "id": 19,
+        "name":"Max Verstappen",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport1.jpg",
+        "category": 4
+    },
+    {
+        "id": 20,
+        "name":"Checo Perez",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport2.jpg",
+        "category": 4
+    },
+    {
+        "id": 21,
+        "name":"Roger Fereder",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport3.jpg",
+        "category": 4
+    },
+    {
+        "id": 22,
+        "name":"Rafa Nadal",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport4.jpg",
+        "category": 4
+    },
+    {
+        "id": 23,
+        "name":"Lebron James",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport5.jpg",
+        "category": 4
+    },
+    {
+        "id": 24,
+        "name":"Michael Jordan",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/sports/sport6.jpg",
+        "category": 4
+    },
+    {
+        "id": 25,
+        "name":"Obi-Wan",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/starswars/sw1.jpg",
+        "category": 5
+    },
+    {
+        "id": 26,
+        "name":"Darth-Vader",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/starswars/sw2.jpg",
+        "category": 5
+    },
+    {
+        "id": 27,
+        "name":"Luke with Grogu",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/starswars/sw3.jpg",
+        "category": 5
+    },
+    {
+        "id": 28,
+        "name":"Princess Leia",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/starswars/sw4.jpg",
+        "category": 5
+    },
+    {
+        "id": 29,
+        "name":"R2-D2",
+        "price":14.99,
+        "imgUrl": "../src/assets/imgs/starswars/sw5.jpg",
+        "category": 5
+    },
+    {
+        "id": 30,
+        "name":"General Grievous",
+        "price":14.99,
+        "imgUrl": "./src/assets/imgs/starswars/sw6.jpg",
+        "category": 5
     }
 ]
