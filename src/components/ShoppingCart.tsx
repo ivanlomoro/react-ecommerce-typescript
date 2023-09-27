@@ -1,12 +1,11 @@
 import { Offcanvas, Stack } from "react-bootstrap";
-import { useShoppingCart } from "../context/ShoppingCartContext";
+import { useShoppingCart } from "../types/context/ShoppingCartContext";
 import { CardProduct } from "./CardProduct";
 import { formatCurrency } from "../utils/formatCurrency";
 import storeProducts from "../data/products.json"
+import { ShoppingCartProps } from "../types/product";
 
-type ShoppingCartProps={
-    isOpen: boolean
-}
+
 
 export function ShoppingCart({isOpen}: ShoppingCartProps) {
     const { closeCart, cartProducts } = useShoppingCart();

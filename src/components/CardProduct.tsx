@@ -1,11 +1,8 @@
-import { useShoppingCart } from "../context/ShoppingCartContext"
+import { useShoppingCart } from "../types/context/ShoppingCartContext"
 import storeProducts from "../data/products.json"
+import { CardProductProps } from "../types/product"
 import { formatCurrency } from "../utils/formatCurrency"
 
-type CardProductProps={
-    id:number,
-    quantity:number
-}
 
 export function CardProduct ({ id, quantity }: CardProductProps){
     const { removeFromCart } = useShoppingCart()

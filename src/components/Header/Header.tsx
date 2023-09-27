@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Header.styles.css"
-import { useShoppingCart } from "../../context/ShoppingCartContext"
+import { useShoppingCart } from "../../types/context/ShoppingCartContext"
 
 export function Header(){
     const { openCart, cartQuantity } = useShoppingCart()
@@ -11,7 +11,7 @@ export function Header(){
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/store">Store</Link>
-                <Link to="/about">About</Link>
+                <Link to="/login">Login</Link>
             </nav>
             <div className="carrito">
                 {cartQuantity > 0 && (

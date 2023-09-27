@@ -1,13 +1,7 @@
 import { formatCurrency } from "../utils/formatCurrency"
-import { useShoppingCart } from "../context/ShoppingCartContext"
+import { useShoppingCart } from "../types/context/ShoppingCartContext"
+import { StoreProductsProps } from "../types/product";
 
-
-type StoreProductsProps ={
-    id:number
-    name:string
-    price:number
-    imgUrl:string
-}
 
 export function StoreProduct ({id,name,price,imgUrl}:StoreProductsProps){
     const { getProductQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart}= useShoppingCart()

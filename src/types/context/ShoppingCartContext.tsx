@@ -1,15 +1,8 @@
-import React, { ReactNode, createContext, useContext, useState } from "react";
-import { ShoppingCart } from "../components/ShoppingCart";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+import {createContext, useContext, useState } from "react";
+import { ShoppingCart } from "../../components/ShoppingCart";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { CartProduct, ShoppingCartProviderProps} from "../product";
 
-type ShoppingCartProviderProps={
-    children: ReactNode
-}
-
-type CartProduct={
-    id:number,
-    quantity:number
-}
 
 type ShoppingCartContext={
     openCart: () => void
