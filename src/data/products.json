@@ -22,7 +22,7 @@
     },
     {
         "id": 4,
-        "name":"Trunks",
+        "name":"Cell",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime4.jpg",
         "category": 1
