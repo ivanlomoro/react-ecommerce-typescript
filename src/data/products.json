@@ -4,209 +4,269 @@
         "name":"Yami Yugi",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime1.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime1_box.jpg",
+        "category": 1,
+        "topSale":false
     },
     {
         "id": 2,
         "name":"Seto Kaiba",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime2.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime2_box.jpg",
+        "category": 1,
+        "topSale":false
     },
     {
         "id": 3,
         "name":"Goku",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime3.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime3_box.jpg",
+        "category": 1,
+        "topSale":false
     },
     {
         "id": 4,
         "name":"Cell",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime4.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime4_box.jpg",
+        "category": 1,
+        "topSale":true
     },
     {
         "id": 5,
         "name":"Homer",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime5.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime5_box.jpg",
+        "category": 1,
+        "topSale":true
     },
     {
         "id": 6,
         "name":"Hugo",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/animation/anime6.jpg",
-        "category": 1
+        "imgUrlAlt": "../src/assets/imgs/animation/anime6_box.jpg",
+        "category": 1,
+        "topSale":false
     },
     {
         "id": 7,
         "name":"Harry Potter",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp1.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp1_box.jpg",
+        "category": 2,
+        "topSale":true
     },
     {
         "id": 8,
         "name":"Dobby",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp2.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp2_box.jpg",
+        "category": 2,
+        "topSale":false
     },
     {
         "id": 9,
         "name":"Ron",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp3.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp3_box.jpg",
+        "category": 2,
+        "topSale":false
     },
     {
         "id": 10,
         "name":"Hermione",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp4.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp4_box.jpg",
+        "category": 2,
+        "topSale":false
     },
     {
         "id": 11,
         "name":"Hagrid",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp5.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp5_box.jpg",
+        "category": 2,
+        "topSale":false
     },
     {
         "id": 12,
         "name":"Dumbledore",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp6.jpg",
-        "category": 2
+        "imgUrlAlt": "../src/assets/imgs/hp/hp6_box.jpg",
+        "category": 2,
+        "topSale":false
     },
     {
         "id": 13,
         "name":"Spider-Man",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel1.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel1_box.jpg",
+        "category": 3,
+        "topSale":true
     },
     {
         "id": 14,
         "name":"Iron Man",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel2.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel2_box.jpg",
+        "category": 3,
+        "topSale":false
     },
     {
         "id": 15,
         "name":"Thor",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel3.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel3_box.jpg",
+        "category": 3,
+        "topSale":false
     },
     {
         "id": 16,
         "name":"Groot",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel4.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel4_box.jpg",
+        "category": 3,
+        "topSale":false
     },
     {
         "id": 17,
         "name":"Black Panther",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel5.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel5_box.jpg",
+        "category": 3,
+        "topSale":false
     },
     {
         "id": 18,
         "name":"Thanos",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel6.jpg",
-        "category": 3
+        "imgUrlAlt": "../src/assets/imgs/marvel/marvel6_box.jpg",
+        "category": 3,
+        "topSale":false
     },
     {
         "id": 19,
         "name":"Max Verstappen",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport1.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport1_box.jpg",
+        "category": 4,
+        "topSale":false
     },
     {
         "id": 20,
         "name":"Checo Perez",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport2.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport2_box.jpg",
+        "category": 4,
+        "topSale":false
     },
     {
         "id": 21,
-        "name":"Roger Fereder",
+        "name":"Roger Federer",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport3.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport3_box.jpg",
+        "category": 4,
+        "topSale":false
     },
     {
         "id": 22,
         "name":"Rafa Nadal",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport4.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport4_box.jpg",
+        "category": 4,
+        "topSale":true
     },
     {
         "id": 23,
         "name":"Lebron James",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport5.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport5_box.jpg",
+        "category": 4,
+        "topSale":false
     },
     {
         "id": 24,
         "name":"Michael Jordan",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport6.jpg",
-        "category": 4
+        "imgUrlAlt": "../src/assets/imgs/sports/sport6_box.jpg",
+        "category": 4,
+        "topSale":false
     },
     {
         "id": 25,
         "name":"Obi-Wan",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw1.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw1_box.jpg",
+        "category": 5,
+        "topSale":false
     },
     {
         "id": 26,
         "name":"Darth-Vader",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw2.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw2_box.jpg",
+        "category": 5,
+        "topSale":true
     },
     {
         "id": 27,
         "name":"Luke with Grogu",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw3.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw3_box.jpg",
+        "category": 5,
+        "topSale":false
     },
     {
         "id": 28,
         "name":"Princess Leia",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw4.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw4_box.jpg",
+        "category": 5,
+        "topSale":false
     },
     {
         "id": 29,
         "name":"R2-D2",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw5.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw5_box.jpg",
+        "category": 5,
+        "topSale":false
     },
     {
         "id": 30,
         "name":"General Grievous",
         "price":14.99,
         "imgUrl": "./src/assets/imgs/starswars/sw6.jpg",
-        "category": 5
+        "imgUrlAlt": "../src/assets/imgs/starswars/sw6_box.jpg",
+        "category": 5,
+        "topSale":false
     }
 ]

@@ -1,9 +1,9 @@
 import { Offcanvas, Stack } from "react-bootstrap";
-import { useShoppingCart } from "../types/context/ShoppingCartContext";
-import { CardProduct } from "./CardProduct";
-import { formatCurrency } from "../utils/formatCurrency";
-import storeProducts from "../data/products.json"
-import { ShoppingCartProps } from "../types/product";
+import { useShoppingCart } from "../../types/context/ShoppingCartContext";
+import { CardProduct } from "../CardProduct/CardProduct";
+import { formatCurrency } from "../../utils/formatCurrency";
+import storeProducts from "../../data/products.json"
+import { ShoppingCartProps } from "../../types/product";
 
 
 

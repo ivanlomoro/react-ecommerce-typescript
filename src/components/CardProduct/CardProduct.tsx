@@ -1,7 +1,7 @@
-import { useShoppingCart } from "../types/context/ShoppingCartContext"
-import storeProducts from "../data/products.json"
-import { CardProductProps } from "../types/product"
-import { formatCurrency } from "../utils/formatCurrency"
+import { useShoppingCart } from "../../types/context/ShoppingCartContext"
+import storeProducts from "../../data/products.json"
+import { CardProductProps } from "../../types/product"
+import { formatCurrency } from "../../utils/formatCurrency"
 
 
 export function CardProduct ({ id, quantity }: CardProductProps){

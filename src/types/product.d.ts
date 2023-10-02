@@ -12,6 +12,9 @@ export type StoreProductsProps ={
     name:string
     price:number
     imgUrl:string
+    imgUrlAlt:string
+    category:number
+    topSale:boolean
 }
 
 export type ShoppingCartProviderProps={

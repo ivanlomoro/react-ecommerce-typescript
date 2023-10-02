@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-import { ShoppingCart } from "../../components/ShoppingCart";
+import { ShoppingCart } from "../../components/ShoppingCart/ShoppingCart";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { CartProduct, ShoppingCartProviderProps } from "../product";
 
