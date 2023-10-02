@@ -1,6 +1,7 @@
 export type CardProductProps={
     id:number,
     quantity:number
+    productDetails: StoreProductsProps;
 }
 
 export type ShoppingCartProps={
