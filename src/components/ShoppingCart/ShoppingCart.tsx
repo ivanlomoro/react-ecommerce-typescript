@@ -16,6 +16,11 @@ export function ShoppingCart({isOpen}: ShoppingCartProps) {
             <Offcanvas.Title>Cart</Offcanvas.Title>   
         </Offcanvas.Header>
         <Offcanvas.Body>
+        {cartProducts.length === 0 ? (
+                    <div className="text-center">
+                        The cart is empty.
+                    </div>
+                ) : (
             <Stack gap={3}>
                 {cartProducts.map(item => (
                     <CardProduct key= {item.id} {...item}/>
@@ -28,6 +33,7 @@ export function ShoppingCart({isOpen}: ShoppingCartProps) {
                     )}
                 </div>
             </Stack>
+            )}
         </Offcanvas.Body>
     </Offcanvas>
     )

@@ -4,8 +4,9 @@ import { CardProductProps } from "../../types/product"
 import { formatCurrency } from "../../utils/formatCurrency"
 
 
+
 export function CardProduct ({ id, quantity }: CardProductProps){
-    const { removeFromCart } = useShoppingCart()
+    const { removeFromCart, decreaseCartQuantity, increaseCartQuantity } = useShoppingCart()
     const product = storeProducts.find(i => i.id === id)
     if (product ==null) return null
 
@@ -20,6 +21,8 @@ export function CardProduct ({ id, quantity }: CardProductProps){
             <div className="text-muted" style={{fontSize: ".75rem"}}>
                 {formatCurrency(product.price)}
             </div>
+            <button onClick={() => decreaseCartQuantity(id)}>-</button>
+            <button onClick={() => increaseCartQuantity(id)}>+</button>
         </div>
             <div>
                 {formatCurrency(product.price * quantity)}
