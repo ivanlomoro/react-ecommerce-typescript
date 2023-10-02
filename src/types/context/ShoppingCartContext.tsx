@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useState } from "react";
 import { ShoppingCart } from "../../components/ShoppingCart/ShoppingCart";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { CartProduct, ShoppingCartProviderProps } from "../product";
@@ -14,37 +14,6 @@ type ShoppingCartContextType = {
     cartProducts: CartProduct[];
 };
 
-type Action =
-    | { type: "ADD_TO_CART"; id: number }
-    | { type: "REMOVE_FROM_CART"; id: number };
-
-const initialState: CartProduct[] = [];
-
-const shoppingCartReducer = (
-    state: CartProduct[],
-    action: Action
-): CartProduct[] => {
-    let existingProduct;
-
-    switch (action.type) {
-        case "ADD_TO_CART":
-            existingProduct = state.find((item) => item.id === action.id);
-            if (existingProduct) {
-                return state.map((item) =>
-                    item.id === action.id
-                        ? { ...item, quantity: item.quantity + 1 }
-                        : item
-                );
-            } else {
-                return [...state, { id: action.id, quantity: 1 }];
-            }
-        case "REMOVE_FROM_CART":
-            return state.filter((item) => item.id !== action.id);
-        default:
-            return state;
-    }
-};
-
 const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
 export function useShoppingCart() {
@@ -52,12 +21,9 @@ export function useShoppingCart() {
 }
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-    const [isOpen, setIsOpen] = useLocalStorage<boolean>("cartIsOpen", false);
-    const [cartProducts, dispatch] = useReducer(
-        shoppingCartReducer,
-        initialState
-    );
-
+    const [isOpen, setIsOpen] = useState(false)
+    const [cartProducts, setCartProducts] = useLocalStorage<CartProduct[]>("shopping-cart",[])
+    
     const cartQuantity = cartProducts.reduce(
         (quantity, item) => item.quantity + quantity,
         0
@@ -71,20 +37,35 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     }
 
     function increaseCartQuantity(id: number) {
-        dispatch({ type: "ADD_TO_CART", id });
+        const updatedCartProducts = [...cartProducts];
+        const existingProduct = updatedCartProducts.find((item) => item.id === id);
+
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            updatedCartProducts.push({ id, quantity: 1 });
+        }
+
+        setCartProducts(updatedCartProducts);
     }
 
     function decreaseCartQuantity(id: number) {
-        const existingProduct = cartProducts.find((item) => item.id === id);
-        if (existingProduct && existingProduct.quantity === 1) {
-            removeFromCart(id);
-        } else {
-            dispatch({ type: "ADD_TO_CART", id });
+        const updatedCartProducts = [...cartProducts];
+        const existingProduct = updatedCartProducts.find((item) => item.id === id);
+
+        if (existingProduct) {
+            if (existingProduct.quantity === 1) {
+                removeFromCart(id);
+            } else {
+                existingProduct.quantity -= 1;
+                setCartProducts(updatedCartProducts);
+            }
         }
     }
 
     function removeFromCart(id: number) {
-        dispatch({ type: "REMOVE_FROM_CART", id });
+        const updatedCartProducts = cartProducts.filter((item) => item.id !== id);
+        setCartProducts(updatedCartProducts);
     }
 
     return (
