@@ -6,39 +6,22 @@ import { Offcanvas, Stack } from "react-bootstrap";
 import { CardProduct } from "../CardProduct/CardProduct";
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
-    const { closeCart, cartProducts } = useShoppingCart();
+    const { closeCart, cartProducts, getProductDetails } = useShoppingCart();
     const [totalPrice, setTotalPrice] = useState<number | null>(null);
-    const [productDetails, setProductDetails] = useState<StoreProductsProps[] | null>(null);
-
-    const getProductDetails = async (productId: number): Promise<StoreProductsProps | undefined> => {
-        try {
-            const productsApiUrl = "http://localhost:3001/products";
-            const response = await fetch(`${productsApiUrl}/${productId}`);
-            if (response.ok) {
-                const data = await response.json();
-                return data as StoreProductsProps;
-            } else {
-                console.error(`Error al obtener detalles del producto (código de respuesta ${response.status})`);
-                return undefined;
-            }
-        } catch (error) {
-            console.error("Error al obtener detalles del producto:", error);
-            return undefined;
-        }
-    };
+    const [productDetails, setProductDetails] = useState<StoreProductsProps[] | undefined>(undefined);
 
     useEffect(() => {
         const fetchProductDetails = async () => {
             const productDetailsPromises = cartProducts.map((item) => getProductDetails(item.id));
             const resolvedProductDetails = await Promise.all(productDetailsPromises);
             const productDetailsArray = resolvedProductDetails.filter((item) => item !== undefined) as StoreProductsProps[];
-    
+
             setProductDetails(productDetailsArray);
         };
-    
+
         fetchProductDetails();
-    }, [cartProducts]);
-    
+    }, [cartProducts, getProductDetails]);
+
 
     useEffect(() => {
         if (productDetails) {
@@ -69,8 +52,8 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                                     return (
                                         <CardProduct
                                             key={item.id}
-                                            id={item.id} 
-                                            quantity={item.quantity} 
+                                            id={item.id}
+                                            quantity={item.quantity}
                                             productDetails={productDetail as StoreProductsProps}
                                         />
                                     );
@@ -80,7 +63,6 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                         ) : (
                             <div className="text-center">Loading...</div>
                         )}
-
 
                         <div className="ms-auto fw-bold fs-5">
                             Total {formatCurrency(totalPrice || 0)}

@@ -4,28 +4,20 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import { CardProductProps, StoreProductsProps } from "../../types/product";
 
 export function CardProduct({ id, quantity }: CardProductProps) {
-    const { removeFromCart, decreaseCartQuantity, increaseCartQuantity } = useShoppingCart();
-    const [productDetails, setProductDetails] = useState<StoreProductsProps | null>(null);
+    const { removeFromCart, decreaseCartQuantity, increaseCartQuantity, getProductDetails  } = useShoppingCart();
+    const [productDetails, setProductDetails] = useState<StoreProductsProps | undefined>(undefined);
 
     useEffect(() => {
         async function fetchProductDetails() {
-            try {
-                const response = await fetch(`http://localhost:3001/products/${id}`);
-                if (!response.ok) {
-                    throw new Error("Error al obtener detalles del producto");
-                }
-                const data = await response.json();
-                setProductDetails(data);
-            } catch (error) {
-                console.error("Error al obtener detalles del producto:", error);
-            }
+            const details = await getProductDetails(id);
+            setProductDetails(details);
         }
 
         fetchProductDetails();
-    }, [id]);
+    }, [id, getProductDetails]);
 
     if (!productDetails) {
-        return <div>Cargando...</div>;
+        return <div>Loading...</div>;
     }
 
     return (

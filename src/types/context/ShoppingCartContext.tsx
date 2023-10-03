@@ -1,11 +1,12 @@
 import { createContext, useContext, useState } from "react";
 import { ShoppingCart } from "../../components/ShoppingCart/ShoppingCart";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
-import { CartProduct, ShoppingCartProviderProps } from "../product";
+import { CartProduct, ShoppingCartProviderProps, StoreProductsProps } from "../product";
 
 type ShoppingCartContextType = {
     openCart: () => void;
     closeCart: () => void;
+    getProductDetails: (id: number) => Promise<StoreProductsProps | undefined>;
     getProductQuantity: (id: number) => number;
     increaseCartQuantity: (id: number) => void;
     decreaseCartQuantity: (id: number) => void;
@@ -23,7 +24,8 @@ export function useShoppingCart() {
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     const [isOpen, setIsOpen] = useState(false)
     const [cartProducts, setCartProducts] = useLocalStorage<CartProduct[]>("shopping-cart",[])
-    
+    const [productDetails, setProductDetails] = useState<StoreProductsProps[]>([]); // Agrega esta línea
+
     const cartQuantity = cartProducts.reduce(
         (quantity, item) => item.quantity + quantity,
         0
@@ -34,6 +36,27 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
 
     function getProductQuantity(id: number) {
         return cartProducts.find((item) => item.id === id)?.quantity || 0;
+    }
+
+    async function getProductDetails(id: number): Promise<StoreProductsProps | undefined> {
+        const existingProduct = productDetails.find((item) => item?.id === id);
+
+        if (existingProduct) {
+            return existingProduct;
+        } else {
+            try {
+                const response = await fetch(`http://localhost:3001/products/${id}`);
+                if (!response.ok) {
+                    throw new Error("Error al obtener detalles del producto");
+                }
+                const data = await response.json();
+                setProductDetails([...productDetails, data]);
+                return data;
+            } catch (error) {
+                console.error("Error al obtener detalles del producto:", error);
+                return undefined;
+            }
+        }
     }
 
     function increaseCartQuantity(id: number) {
@@ -72,6 +95,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         <ShoppingCartContext.Provider
             value={{
                 getProductQuantity,
+                getProductDetails,
                 increaseCartQuantity,
                 decreaseCartQuantity,
                 removeFromCart,
