@@ -4,6 +4,7 @@ import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { CartProduct, ShoppingCartProviderProps, StoreProductsProps } from "../product";
 
 type ShoppingCartContextType = {
+    isOpen: boolean;
     openCart: () => void;
     closeCart: () => void;
     getProductDetails: (id: number) => Promise<StoreProductsProps | undefined>;
@@ -103,10 +104,11 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
                 closeCart,
                 cartProducts,
                 cartQuantity,
+                isOpen
             }}
         >
             {children}
-            <ShoppingCart isOpen={isOpen} />
+            <ShoppingCart isOpen={isOpen} cartProducts={[]} />
         </ShoppingCartContext.Provider>
     );
 }

@@ -5,7 +5,7 @@ import { ShoppingCartProps, StoreProductsProps } from "../../types/product";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { CardProduct } from "../CardProduct/CardProduct";
 
-export function ShoppingCart({ isOpen }: ShoppingCartProps) {
+export function ShoppingCart({ isOpen}: ShoppingCartProps) {
     const { closeCart, cartProducts, getProductDetails } = useShoppingCart();
     const [totalPrice, setTotalPrice] = useState<number | null>(null);
     const [productDetails, setProductDetails] = useState<StoreProductsProps[] | undefined>(undefined);

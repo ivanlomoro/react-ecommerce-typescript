@@ -1,11 +1,12 @@
 export type CardProductProps={
-    id:number,
+    id:number
     quantity:number
     productDetails: StoreProductsProps;
 }
 
 export type ShoppingCartProps={
     isOpen: boolean
+    cartProducts: CartProduct[];
 }
 
 export type StoreProductsProps ={
