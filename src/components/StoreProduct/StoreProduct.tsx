@@ -1,7 +1,8 @@
 import { formatCurrency } from "../../utils/formatCurrency";
 import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { StoreProductsProps } from "../../types/product";
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function StoreProduct({id,name,price,imgUrl,imgUrlAlt,}: StoreProductsProps) {
   const { getProductQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
@@ -13,13 +14,15 @@ export function StoreProduct({id,name,price,imgUrl,imgUrlAlt,}: StoreProductsPro
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)} 
     >
-      <img
-        className="card-img-top"
-        src={isHovered ? imgUrlAlt : imgUrl} 
-        height="250px"
-        style={{ objectFit: "contain" }}
-        alt={name}
-      />
+      <Link to={`/product/${id}`}>
+        <img
+          className="card-img-top"
+          src={isHovered ? imgUrlAlt : imgUrl}
+          height="250px"
+          style={{ objectFit: "contain" }}
+          alt={name}
+        />
+      </Link>
       <div className="card-body d-flex flex-column">
         <div className="card-title d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2 align-items">{name}</span>

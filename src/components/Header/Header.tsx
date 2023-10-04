@@ -7,7 +7,9 @@ export function Header(){
     return(
         <header>
         <div className="contenedor">
-            <img src="src/components/Header/imgs/icono_page.png" alt="Icono" width="80" height="70" style={{ borderRadius: '50%' }}/>
+            <Link to="/">
+                <img src="/icono_page.png" alt="Icono" width="80" height="70" style={{ borderRadius: '50%' }}/>
+            </Link>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/store">Store</Link>

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { formatCurrency } from "../../utils/formatCurrency";
-import { CardProductProps } from "../../types/product";
+import { CardProductProps, StoreProductsProps } from "../../types/product";
 
-export function CardProduct({ id, quantity, productDetails }: CardProductProps) {
-    const { removeFromCart, decreaseCartQuantity, increaseCartQuantity } = useShoppingCart();
+export function CardProduct({ id, quantity }: CardProductProps) {
+    const { removeFromCart, decreaseCartQuantity, increaseCartQuantity, getProductDetails  } = useShoppingCart();
+    const [productDetails, setProductDetails] = useState<StoreProductsProps | undefined>(undefined);
+
+    useEffect(() => {
+        async function fetchProductDetails() {
+            const details = await getProductDetails(id);
+            setProductDetails(details);
+        }
+
+        fetchProductDetails();
+    }, [id, getProductDetails]);
+
+    if (!productDetails) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <div className="d-flex justify-content-between align-items-center p-2 border-bottom">
