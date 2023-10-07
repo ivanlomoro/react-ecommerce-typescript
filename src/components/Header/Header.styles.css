@@ -1,5 +1,5 @@
 
-.contenedor{
+.container{
     max-width: 1400px;
     margin:auto;
 }
@@ -24,7 +24,7 @@ header .icono{
 }
 
 
-header .contenedor{
+header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,7 +43,6 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-family: 'Montserrat';
 }
 
 header a:hover{
@@ -52,7 +51,7 @@ header a:hover{
     border-radius: 15px;
 }
 
-header .carrito {
+header .cart {
     margin-left: auto; 
     display: flex;
     align-items: center;

@@ -6,7 +6,7 @@ export function Header(){
     const { openCart, cartQuantity } = useShoppingCart()
     return(
         <header>
-        <div className="contenedor">
+        <div className="container">
             <Link to="/">
                 <img src="/icono_page.png" alt="Icono" width="80" height="70" style={{ borderRadius: '50%' }}/>
             </Link>
@@ -15,7 +15,7 @@ export function Header(){
                 <Link to="/store">Store</Link>
                 <Link to="/login">Login</Link>
             </nav>
-            <div className="carrito">
+            <div className="cart">
                 {cartQuantity >= 0 && (
                         <button
                             onClick={openCart}

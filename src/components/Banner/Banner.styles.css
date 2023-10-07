@@ -18,7 +18,6 @@
 #banner h1{
     font-size: 76px;
     color: white;
-    font-family: 'Montserrat';
     font-weight: bold;
 }
 
@@ -28,7 +27,6 @@
 
 .btn-banner{
     margin-top: 2rem;
-    font-family: 'Montserrat'
 }
 
 .btn-big{
