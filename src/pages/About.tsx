@@ -1,6 +1,6 @@
 import { Header } from "../components/Header/Header";
 
-export function Login () {
+export function About () {
     return (
         <>
             <Header />

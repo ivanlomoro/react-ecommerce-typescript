@@ -1,0 +1,21 @@
+.product-name{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.btn-style{
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    margin-left: 0.25rem;
+}
+
+.btn-style:hover{
+color: var(--primary-color);
+transition: 0.5s;
+}

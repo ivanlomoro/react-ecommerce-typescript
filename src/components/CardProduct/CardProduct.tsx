@@ -2,6 +2,9 @@ import React from "react";
 import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { formatCurrency } from "../../utils/formatCurrency";
 import { CardProductProps } from "../../types/product";
+import './CardProduct.styles.css'
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import { BiTrashAlt } from "react-icons/bi";
 
 
 export function CardProduct({ id, quantity, productDetails }: CardProductProps) {
@@ -17,38 +20,40 @@ export function CardProduct({ id, quantity, productDetails }: CardProductProps) 
                 />
                 <div className="ms-3">
                     <div>
-                        {productDetails.name}{" "}
+                        <span className="product-name">
+                            {productDetails.name}{" "}
+                        </span>
                         {quantity > 1 && (
                             <span className="text-muted" style={{ fontSize: ".75rem" }}>
                                 x{quantity}
                             </span>
                         )}
                     </div>
-                    <div className="text-muted" style={{ fontSize: ".75rem" }}>
+                    <div className="text-muted" style={{ fontSize: "1rem", marginLeft:"1rem" }}>
                         {formatCurrency(productDetails.price)}
                     </div>
                     <button
-                        className="btn btn-outline-primary me-2"
+                        className="btn-style"
                         onClick={() => decreaseCartQuantity(id)}
                     >
-                        -
+                        <AiOutlineMinus />
                     </button>
                     <button
-                        className="btn btn-outline-primary"
+                        className="btn-style"
                         onClick={() => increaseCartQuantity(id)}
                     >
-                        +
+                        <AiOutlinePlus />
                     </button>
                 </div>
             </div>
-            <div className="text-end">
+            <div className="text-end" style={{ fontSize: "1.5rem" }}>
                 {formatCurrency(productDetails.price * quantity)}
             </div>
             <button
-                className="btn btn-outline-danger"
+                className="btn-style"
                 onClick={() => removeFromCart(id)}
             >
-                &times;
+                <BiTrashAlt />
             </button>
         </div>
     );

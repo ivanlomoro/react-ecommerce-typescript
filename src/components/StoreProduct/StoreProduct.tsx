@@ -3,16 +3,17 @@ import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { StoreProductsProps } from "../../types/product";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import './StoreProduct.styles.css'
 
-export function StoreProduct({id,name,price,imgUrl,imgUrlAlt,}: StoreProductsProps) {
+export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProductsProps) {
   const { getProductQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
   const quantity = getProductQuantity(id);
-  const [isHovered, setIsHovered] = useState(false); 
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div
       className="card h-100"
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)} 
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <Link to={`/product/${id}`}>
         <img
@@ -26,11 +27,11 @@ export function StoreProduct({id,name,price,imgUrl,imgUrlAlt,}: StoreProductsPro
       <div className="card-body d-flex flex-column">
         <div className="card-title d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2 align-items">{name}</span>
-          <span className="ms-2 text-bold">{formatCurrency(price)}</span>
+          <span className="ms-2 text-bold price-product">{formatCurrency(price)}</span>
         </div>
-        <div className="mt-auto">
+        <div className="mt-auto d-flex align-items-center justify-content-center">
           {quantity === 0 ? (
-            <button onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
+            <button className="store-btn" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
           ) : (
             <div className="d-flex align-items-center flex-column" style={{ gap: ".5rem" }}>
               <div className="d-flex align-items-center justify-content-center" style={{ gap: ".5rem" }}>

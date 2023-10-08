@@ -38,11 +38,11 @@ export function ShoppingCart({ isOpen}: ShoppingCartProps) {
     return (
         <Offcanvas show={isOpen} onHide={closeCart} placement="end">
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Cart</Offcanvas.Title>
+                <Offcanvas.Title style={{fontSize:"2rem"}}>Cart</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 {cartProducts.length === 0 ? (
-                    <div className="text-center">The cart is empty.</div>
+                    <div className="text-center" style={{fontSize:"1.5rem"}}>The cart is empty.</div>
                 ) : (
                     <Stack gap={3}>
                         {productDetails && productDetails.length > 0 ? (

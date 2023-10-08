@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #fece00;
+    --secondary-color: #1095CE;
+    --background-color: #f8f9fa;
+    --text-color-primary: black;
+    --text-color-secondary: white;
+}
+
 *{
     font-family: 'Geo';
+}
+
+.background-page{
+    background-color: var(--secondary-color);
 }
