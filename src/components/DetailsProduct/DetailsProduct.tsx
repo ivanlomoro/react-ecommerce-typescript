@@ -5,7 +5,8 @@ import { StoreProductsProps } from "../../types/product";
 import { Row, Col } from "react-bootstrap";
 import { PiKeyReturnBold } from 'react-icons/pi'
 import "./DetailsProduct.styles.css"
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function DetailsProduct() {
     const { productId } = useParams<{ productId: string }>();
@@ -59,7 +60,18 @@ export function DetailsProduct() {
                         <p className="product-name">Name: {product.name}</p>
                         <p className="product-price">Price: ${product.price}</p>
                         <p className="product-description">Description: {product.description}</p>
-                        <button className="store-btn add-to-cart-button" onClick={() => increaseCartQuantity(product.id)}>+ Add To Cart</button>
+                        <button
+                            className="store-btn add-to-cart-button"
+                            onClick={() => {
+                                increaseCartQuantity(product.id);
+                                toast.success('Producto agregado al carrito', {
+                                    position: 'top-right',
+                                    autoClose: 2000,
+                                });
+                            }}
+                        >
+                            + Add To Cart
+                        </button>
                     </div>
                 </div>
             ) : (

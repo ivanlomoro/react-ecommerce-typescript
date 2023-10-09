@@ -4,6 +4,8 @@ import { StoreProductsProps } from "../../types/product";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './StoreProduct.styles.css'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProductsProps) {
   const { getProductQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
@@ -30,7 +32,18 @@ export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProdu
           <span className="ms-2 text-bold price-product">{formatCurrency(price)}</span>
         </div>
         <div className="mt-auto d-flex align-items-center justify-content-center">
-            <button className="store-btn" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
+          <button
+            className="store-btn"
+            onClick={() => {
+              increaseCartQuantity(id);
+              toast.success('Producto agregado al carrito', {
+                position: 'top-right', 
+                autoClose: 2000,
+              });
+            }}
+          >
+            + Add To Cart
+          </button>
         </div>
       </div>
     </div>
