@@ -17,6 +17,7 @@ export type StoreProductsProps ={
     imgUrlAlt:string
     category:number
     topSale:boolean
+    description:string
 }
 
 export type ShoppingCartProviderProps={
