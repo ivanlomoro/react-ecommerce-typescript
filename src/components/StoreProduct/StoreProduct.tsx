@@ -30,22 +30,7 @@ export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProdu
           <span className="ms-2 text-bold price-product">{formatCurrency(price)}</span>
         </div>
         <div className="mt-auto d-flex align-items-center justify-content-center">
-          {quantity === 0 ? (
             <button className="store-btn" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</button>
-          ) : (
-            <div className="d-flex align-items-center flex-column" style={{ gap: ".5rem" }}>
-              <div className="d-flex align-items-center justify-content-center" style={{ gap: ".5rem" }}>
-                <button onClick={() => decreaseCartQuantity(id)}>-</button>
-                <div>
-                  <span className="fs-3">{quantity}</span> in cart
-                </div>
-                <button onClick={() => increaseCartQuantity(id)}>+</button>
-              </div>
-              <button className="bg-danger sm" onClick={() => removeFromCart(id)}>
-                Remove
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </div>

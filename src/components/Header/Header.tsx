@@ -40,7 +40,7 @@ export function Header() {
                             style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}
                         >
                             <FiShoppingCart size={35} />
-                            <div className="rounded-circle bg-secondary d-flex justify-content-center align-items-center" style={{ color: "white", width: "1.5rem", height: "1.5rem", position: "absolute", bottom: 30, right: 0, transform: "translate(30%,25%)" }}>
+                            <div className="rounded-circle bg-secondary d-flex justify-content-center align-items-center" style={{ color: "white", width: "1.8rem", height: "1.8rem", position: "absolute", bottom: 30, right: 0, transform: "translate(30%,25%)", fontSize:"1.2rem" }}>
                                 {cartQuantity}
                             </div>
                         </button>
