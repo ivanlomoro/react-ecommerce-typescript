@@ -8,10 +8,10 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { ModalLogin } from "../ModalLogin/ModalLogin";
 import { useState } from "react";
 
+
 export function Header() {
     const { openCart, cartQuantity } = useShoppingCart()
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
     const toggleModal = () => {
         setModalIsOpen(!modalIsOpen);
     };
@@ -25,7 +25,7 @@ export function Header() {
                 <nav>
                     <Link to="/">Home</Link>
                     <Link to="/store">Store</Link>
-                    <Link to="/about">About</Link>
+                    <Link to="/search">Search</Link>
                 </nav>
                 <div className="cart">
                     <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}>
@@ -40,7 +40,7 @@ export function Header() {
                             style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}
                         >
                             <FiShoppingCart size={35} />
-                            <div className="rounded-circle bg-secondary d-flex justify-content-center align-items-center" style={{ color: "white", width: "1.8rem", height: "1.8rem", position: "absolute", bottom: 30, right: 0, transform: "translate(30%,25%)", fontSize:"1.2rem" }}>
+                            <div className="rounded-circle bg-secondary d-flex justify-content-center align-items-center" style={{ color: "white", width: "1.8rem", height: "1.8rem", position: "absolute", bottom: 30, right: 0, transform: "translate(30%,25%)", fontSize: "1.2rem" }}>
                                 {cartQuantity}
                             </div>
                         </button>

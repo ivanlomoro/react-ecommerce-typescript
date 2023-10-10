@@ -1,0 +1,10 @@
+.search-result{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-color-primary);
+}
+
+.search-result:hover{
+    background-color: #efefef;
+}
