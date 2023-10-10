@@ -15,6 +15,16 @@ export function StoreComponent() {
     const [products, setProducts] = useState<StoreProductsProps[]>([]);
     const [productDetails, setProductDetails] = useState<StoreProductsProps[]>([]);
 
+    function shuffleArray(array: StoreProductsProps[]) {
+        const shuffledArray = [...array];
+        for (let i = shuffledArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+        }
+        return shuffledArray;
+    }
+
+    const randomProducts = shuffleArray(products.filter((product) => !product.topSale));
 
     useEffect(() => {
         fetch("http://localhost:3001/products")
@@ -25,7 +35,7 @@ export function StoreComponent() {
                 console.log("Product details:", data);
             })
             .catch((error) => {
-                console.error("Error al obtener productos:", error);
+                console.error("Error getting products:", error);
             });
     }, []);
 
@@ -66,7 +76,7 @@ export function StoreComponent() {
 
             <h2 className="title-store">More Products</h2>
             <Row md={2} xs={1} lg={3} className="g-3">
-                {products.filter((product) => product.topSale !== true).map((product) => (
+                {randomProducts.filter((product) => product.topSale !== true).map((product) => (
                     <Col key={product.id}>
                         <StoreProduct {...product} />
                     </Col>

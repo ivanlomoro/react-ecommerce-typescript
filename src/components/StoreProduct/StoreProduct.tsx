@@ -36,7 +36,7 @@ export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProdu
             className="store-btn"
             onClick={() => {
               increaseCartQuantity(id);
-              toast.success('Producto agregado al carrito', {
+              toast.success('Product added to cart !', {
                 position: 'top-right', 
                 autoClose: 2000,
               });

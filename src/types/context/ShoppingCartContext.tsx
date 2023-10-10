@@ -48,13 +48,13 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
             try {
                 const response = await fetch(`http://localhost:3001/products/${id}`);
                 if (!response.ok) {
-                    throw new Error("Error al obtener detalles del producto");
+                    throw new Error("Error getting product details.");
                 }
                 const data = await response.json();
                 setProductDetails([...productDetails, data]);
                 return data;
             } catch (error) {
-                console.error("Error al obtener detalles del producto:", error);
+                console.error("Error getting product details:", error);
                 return undefined;
             }
         }

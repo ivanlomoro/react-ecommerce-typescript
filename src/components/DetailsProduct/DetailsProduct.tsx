@@ -22,7 +22,7 @@ export function DetailsProduct() {
             if (details) {
                 setProduct(details);
             } else {
-                console.error("Detalles del producto no encontrados.");
+                console.error("Product details not found.");
             }
         };
 
@@ -64,7 +64,7 @@ export function DetailsProduct() {
                             className="store-btn add-to-cart-button"
                             onClick={() => {
                                 increaseCartQuantity(product.id);
-                                toast.success('Producto agregado al carrito', {
+                                toast.success('Product added to cart !', {
                                     position: 'top-right',
                                     autoClose: 2000,
                                 });
