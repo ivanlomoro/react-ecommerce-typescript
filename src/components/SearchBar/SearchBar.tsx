@@ -47,7 +47,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
     return (
         <div className="input-wrapper">
             <FaSearch id="search-icon" />
-            <input
+            <input className='searchbar-input'
                 placeholder='Find your Funko!'
                 value={input}
                 onChange={(e) => handleFilterChange(e.target.value)}

@@ -63,3 +63,29 @@ header .login{
     display: flex;
     align-items: center;
 }
+
+.user-icon {
+    width: 3rem;
+     height: 3rem;
+    background-color: var(--primary-color); 
+    border-radius: 50%; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%; 
+}
+
+.user-info {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+

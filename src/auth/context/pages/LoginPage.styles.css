@@ -1,0 +1,80 @@
+.form-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+     rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("./imgs/background-funkos.jpg");
+    color: var(--text-color-secondary);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
+  
+  .form-content {
+    background-color: white;
+    color: var(--text-color-primary);
+    border: 7px solid var(--secondary-color);
+    width: 600px;
+    height: 370px;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 47px 0px 63px 0px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .form-title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--text-color-primary);
+  }
+  
+  .form-input {
+    margin-bottom: 0px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .form-input:focus{
+    outline-color: var(--secondary-color);
+  }
+
+  .form-btn-login{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+    margin-left: 1rem;
+    
+  }
+  
+  .form-btn-login:hover {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    color: #1095CE;
+  }
+
+  .error-container {
+    max-height: 2.5rem; 
+    overflow: hidden;
+    color: red;
+    font-weight: bold;
+  }
+  

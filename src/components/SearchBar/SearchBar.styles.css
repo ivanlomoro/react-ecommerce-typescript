@@ -10,7 +10,7 @@
     font-size: 20px;
 }
 
-input{
+.searchbar-input{
     background-color: transparent;
     border: none;
     height: 100%;
@@ -18,7 +18,7 @@ input{
     width: 100%;
     margin-left: 5px;
 }
-input:focus{
+.searchbar-input:focus{
     outline:none;
 }
 

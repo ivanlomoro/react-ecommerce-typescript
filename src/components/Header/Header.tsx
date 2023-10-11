@@ -2,8 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import "./Header.styles.css"
 import "../ModalLogin/ModalLogin.styles.css"
 import { useShoppingCart } from "../../types/context/ShoppingCartContext"
-import { FiShoppingCart } from 'react-icons/fi';
-import { BiUser } from 'react-icons/bi'
+import { FiLogOut, FiShoppingCart } from 'react-icons/fi';
 import { AiOutlineHeart } from 'react-icons/ai'
 import { ModalLogin } from "../ModalLogin/ModalLogin";
 import { useContext, useState } from "react";
@@ -38,24 +37,24 @@ export function Header() {
                     <Link to="/">Home</Link>
                     <Link to="/store">Store</Link>
                     <Link to="/search">Search</Link>
-                    <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                        <ul className="navbar-nav ml-auto">
-                            <span className="nav-item nav-link text-primary">
-                                Welcome back, {user && user?.name || 'Guest'}
-                            </span>
-
-                            <button className="nav-item nav-link btn" onClick={onLogout}>
-                                Logout
-                            </button>
-                        </ul>
-                    </div>
                 </nav>
                 <div className="cart">
+                    <span className="user-info">
+                        Welcome back, {user && user?.name + " !" || 'Guest'}
+                    </span>
+                    <div className="user-icon">
+                        <img src="src\assets\imgs\animation\anime4.jpg" alt="Icono de usuario" />
+                    </div>
+
+                    <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }} onClick={() => {
+                        localStorage.clear();
+                        onLogout();
+                        window.location.reload();
+                    }} >
+                        <FiLogOut size={35} />
+                    </button>
                     <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}>
                         <AiOutlineHeart size={35} />
-                    </button>
-                    <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }} onClick={toggleModal} >
-                        <BiUser size={35} />
                     </button>
                     {cartQuantity >= 0 && (
                         <button
@@ -70,6 +69,7 @@ export function Header() {
                     )}
                 </div>
             </div>
-            {modalIsOpen && <ModalLogin isOpen={modalIsOpen} onClose={toggleModal} />}        </header>
+            {modalIsOpen && <ModalLogin isOpen={modalIsOpen} onClose={toggleModal} />}
+        </header>
     )
 }
