@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import { FaSearch } from 'react-icons/fa'
-import './SearchBar.styles.css'
+import React, { useState, useEffect } from 'react';
+import { FaSearch } from 'react-icons/fa';
+import './SearchBar.styles.css';
+import { useSearchParams } from 'react-router-dom';
 
 interface Product {
     id: number;
@@ -13,6 +14,8 @@ interface SearchBarProps {
 
 export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
     const [input, setInput] = useState<string>("");
+    const [searchParams, setSearchParams] = useSearchParams();
+    const filter = searchParams.get("q") || "";
 
     const fetchData = (value: string) => {
         fetch("http://localhost:3001/products")
@@ -23,26 +26,32 @@ export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
                         value &&
                         product &&
                         product.name &&
-                        product.name.toLowerCase().includes(value)
+                        product.name.toLowerCase().includes(value.toLowerCase())
                     );
                 });
                 setResults(results);
+                setSearchParams({ q: value });
             });
     };
 
-    const handleChange = (value: string) => {
+    const handleFilterChange = (value: string) => {
         setInput(value);
-        fetchData(value);
+        setSearchParams({ q: value });
     };
+
+    useEffect(() => {
+        setInput(filter);
+        fetchData(filter);
+    }, [filter]);
 
     return (
         <div className="input-wrapper">
             <FaSearch id="search-icon" />
             <input
-                placeholder='Type to search...'
+                placeholder='Find your Funko!'
                 value={input}
-                onChange={(e) => handleChange(e.target.value)}
+                onChange={(e) => handleFilterChange(e.target.value)}
             />
         </div>
     );
-}
+};

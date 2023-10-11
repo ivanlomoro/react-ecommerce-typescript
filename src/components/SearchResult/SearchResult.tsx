@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 interface SearchResultProps {
   result: {
-    id: number; 
+    id: number;
     name: string;
   };
 }
