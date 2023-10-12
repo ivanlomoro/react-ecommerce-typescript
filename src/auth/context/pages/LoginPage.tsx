@@ -28,7 +28,7 @@ export const LoginPage = () => {
     <div className="form-background">
       <form className='form-content'>
         <Link to="/">
-          <img src="/icono_page.png" alt="Icono" width="80" height="70" style={{ borderRadius: '50%' }} />
+          <img src="/icono_page.png" alt="Icon" width="80" height="70" style={{ borderRadius: '50%' }} />
         </Link>
         <h2 className='form-title'>Log In</h2>
         <input className='form-input'

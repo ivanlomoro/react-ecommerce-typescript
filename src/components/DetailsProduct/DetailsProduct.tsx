@@ -66,7 +66,7 @@ export function DetailsProduct() {
                                 increaseCartQuantity(product.id);
                                 toast.success('Product added to cart !', {
                                     position: 'top-right',
-                                    autoClose: 2000,
+                                    autoClose: 1500,
                                 });
                             }}
                         >

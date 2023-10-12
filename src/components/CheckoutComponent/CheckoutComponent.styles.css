@@ -1,0 +1,211 @@
+.checkout-title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--text-color-primary);
+}
+
+.checkout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./imgs/background-checkout.jpg");
+    color: var(--text-color-secondary);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    ;
+    z-index: 1;
+    background-color: grey;
+}
+
+.form-container {
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    outline: 7px solid var(--primary-color);
+    border: 7px solid var(--secondary-color);
+    width: 800px;
+    height: 700px;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.checkout-swiper {
+    width: 240px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.checkout-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.checkout-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-product-info {
+    margin-left: 20px;
+}
+
+.checkout-product-total {
+    font-size: 1.5rem;
+}
+
+.btn-checkout-container {
+    margin-top: 1rem;
+}
+
+.checkout-btn {
+    margin-right: 1rem;
+}
+
+.checkout-input {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.checkout-input:focus {
+    outline-color: var(--secondary-color);
+}
+
+.checkout-swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+
+.credit-card {
+    background: #D3B768;
+    border-radius: 14px;
+    width:450px;
+    height: 275px;
+    display: block;
+    margin: auto;
+    padding: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 5px 10px black;
+    z-index: 99;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-card {
+    max-width: 50px;
+    margin-bottom: 15px;
+    margin-top: -19px;
+    display: flex;
+
+}
+
+.ait-logo{
+    border-radius: 50%;
+}
+
+.creditcard-label {
+    display: flex;
+    font-size: 10px;
+    color: white;
+}
+
+.creditcard-input {
+    font-family: 'Work Sans', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: white;
+    transition: border-bottom .4s;
+}
+
+.creditcard-input:focus {
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+.creditcard-input::placeholder{
+    color: #ECECEC;
+    opacity: 0.6;
+}
+
+.cardnumber {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.name {
+    display: block;
+    font-size: 15px;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,21 +1,14 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./Header.styles.css"
-import "../ModalLogin/ModalLogin.styles.css"
 import { useShoppingCart } from "../../types/context/ShoppingCartContext"
 import { FiLogOut, FiShoppingCart } from 'react-icons/fi';
 import { AiOutlineHeart } from 'react-icons/ai'
-import { ModalLogin } from "../ModalLogin/ModalLogin";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../auth/context/authContext";
 
 
 export function Header() {
     const { openCart, cartQuantity } = useShoppingCart()
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const toggleModal = () => {
-        setModalIsOpen(!modalIsOpen);
-    };
-
     const { user, logout } = useContext(AuthContext);
 
     const navigate = useNavigate();
@@ -43,7 +36,7 @@ export function Header() {
                         Welcome back, {user && user?.name + " !" || 'Guest'}
                     </span>
                     <div className="user-icon">
-                        <img src="src\assets\imgs\animation\anime4.jpg" alt="Icono de usuario" />
+                        <img src="/src/assets/imgs/animation/anime4.jpg" alt="Icon" />
                     </div>
 
                     <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }} onClick={() => {
@@ -69,7 +62,6 @@ export function Header() {
                     )}
                 </div>
             </div>
-            {modalIsOpen && <ModalLogin isOpen={modalIsOpen} onClose={toggleModal} />}
         </header>
     )
 }

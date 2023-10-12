@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProductsProps) {
-  const { getProductQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
+  const { getProductQuantity, increaseCartQuantity} = useShoppingCart();
   const quantity = getProductQuantity(id);
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -38,7 +38,7 @@ export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProdu
               increaseCartQuantity(id);
               toast.success('Product added to cart !', {
                 position: 'top-right', 
-                autoClose: 2000,
+                autoClose: 1500,
               });
             }}
           >

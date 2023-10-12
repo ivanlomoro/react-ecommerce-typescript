@@ -39,12 +39,13 @@
   }
   
   .form-input {
-    margin-bottom: 0px;
+    margin-bottom: 0.5rem;
     padding: 8px;
     border: 2px solid #ccc;
     border-radius: 4px;
     width: 200px;
     border-radius: 10px 10px 10px 10px;
+
   }
   
   .form-input:focus{

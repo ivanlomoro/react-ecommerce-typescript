@@ -9,9 +9,6 @@ export function Banner() {
                 <Link to="/store" key="store">
                     <button className="btn-big">Buy Now !</button>
                 </Link>
-{/*                 <Link to="/login" key="login">
-                    <button className="btn-big">Log In !</button>
-                </Link> */}
             </div>
         </section>
     )

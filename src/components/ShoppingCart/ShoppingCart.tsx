@@ -4,8 +4,9 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import { ShoppingCartProps, StoreProductsProps } from "../../types/product";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { CardProduct } from "../CardProduct/CardProduct";
-
-export function ShoppingCart({ isOpen}: ShoppingCartProps) {
+import { Link } from "react-router-dom";
+import './ShoppingCart.styles.css'
+export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     const { closeCart, cartProducts, getProductDetails } = useShoppingCart();
     const [totalPrice, setTotalPrice] = useState<number | null>(null);
     const [productDetails, setProductDetails] = useState<StoreProductsProps[] | undefined>(undefined);
@@ -38,11 +39,11 @@ export function ShoppingCart({ isOpen}: ShoppingCartProps) {
     return (
         <Offcanvas show={isOpen} onHide={closeCart} placement="end">
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title style={{fontSize:"2rem"}}>Cart</Offcanvas.Title>
+                <Offcanvas.Title style={{ fontSize: "2rem" }}>Cart</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 {cartProducts.length === 0 ? (
-                    <div className="text-center" style={{fontSize:"1.5rem"}}>The cart is empty.</div>
+                    <div className="text-center" style={{ fontSize: "1.5rem" }}>The cart is empty.</div>
                 ) : (
                     <Stack gap={3}>
                         {productDetails && productDetails.length > 0 ? (
@@ -67,6 +68,11 @@ export function ShoppingCart({ isOpen}: ShoppingCartProps) {
                         <div className="ms-auto fw-bold fs-5">
                             Total {formatCurrency(totalPrice || 0)}
                         </div>
+                        <Link to="/checkout" key="checkout">
+                            <div className="checkout-btn-container">
+                                <button className="checkout-btn" onClick={closeCart}>Checkout</button>
+                            </div>
+                        </Link>
                     </Stack>
                 )}
             </Offcanvas.Body>
