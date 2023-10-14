@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Header } from '../components/Header/Header';
-import { SearchBar } from '../components/SearchBar/SearchBar';
+import { Product, SearchBar } from '../components/SearchBar/SearchBar';
 import SearchResultsList from '../components/SearchResultsList/SearchResultsList';
 import { useSearchParams } from 'react-router-dom';
+
 
 export function Search() {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('q') || '';
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<Product[]>([]);
 
   const handleSearch = (query: string) => {
     setSearchParams({ q: query });

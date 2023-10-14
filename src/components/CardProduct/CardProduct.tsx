@@ -1,10 +1,9 @@
-import React from "react";
-import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { formatCurrency } from "../../utils/formatCurrency";
 import { CardProductProps } from "../../types/product";
 import './CardProduct.styles.css'
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BiTrashAlt } from "react-icons/bi";
+import { useShoppingCart } from "../../types/context/useShoopingCart";
 
 
 export function CardProduct({ id, quantity, productDetails }: CardProductProps) {
@@ -18,7 +17,7 @@ export function CardProduct({ id, quantity, productDetails }: CardProductProps) 
                     alt={productDetails.name}
                     style={{ width: "75px", height: "75px", objectFit: "contain" }}
                 />
-                <div className="ms-3">
+                <div className="ms-2">
                     <div>
                         <span className="product-name">
                             {productDetails.name}{" "}

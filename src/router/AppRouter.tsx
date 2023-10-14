@@ -1,13 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import PrivateRoutes from './PrivateRoutes';
 import { LoginPage } from '../auth/context/pages/LoginPage';
-import { RouterPaths } from '../routes/RouterPaths.routes';
-import { useContext } from 'react';
+import { RouterPaths, RouterPathsProps } from '../routes/RouterPaths.routes';
+import { FC, useContext } from 'react';
 import { AuthContext } from '../auth/context/authContext';
 
 
-
-export const AppRouter = () => {
+export const AppRouter: FC<RouterPathsProps> = (props) => {
 
   const { isLogged } = useContext(AuthContext);
 
@@ -19,12 +18,11 @@ export const AppRouter = () => {
         <Route path="/*" element={
           <PrivateRoutes>
             <Routes>
-              <Route path="/*" element={<RouterPaths />} />
+              <Route path="/*" element={<RouterPaths {...props} />} />
             </Routes>
           </PrivateRoutes>
         } />
       </Routes>
-
     </>
   )
 }

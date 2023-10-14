@@ -13,7 +13,7 @@ import { StoreProduct } from '../StoreProduct/StoreProduct';
 
 export function StoreComponent() {
     const [products, setProducts] = useState<StoreProductsProps[]>([]);
-    const [productDetails, setProductDetails] = useState<StoreProductsProps[]>([]);
+    const [, setProductDetails] = useState<StoreProductsProps[]>([]);
 
     function shuffleArray(array: StoreProductsProps[]) {
         const shuffledArray = [...array];
@@ -85,6 +85,3 @@ export function StoreComponent() {
         </Container>
     )
 }
-
-
-

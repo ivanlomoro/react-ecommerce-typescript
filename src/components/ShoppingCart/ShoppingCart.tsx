@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useShoppingCart } from "../../types/context/ShoppingCartContext";
+import { useEffect, useState } from "react";
 import { formatCurrency } from "../../utils/formatCurrency";
 import { ShoppingCartProps, StoreProductsProps } from "../../types/product";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { CardProduct } from "../CardProduct/CardProduct";
 import { Link } from "react-router-dom";
 import './ShoppingCart.styles.css'
+import { useShoppingCart } from "../../types/context/useShoopingCart";
+
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     const { closeCart, cartProducts, getProductDetails } = useShoppingCart();
     const [totalPrice, setTotalPrice] = useState<number | null>(null);

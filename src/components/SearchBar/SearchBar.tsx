@@ -3,13 +3,15 @@ import { FaSearch } from 'react-icons/fa';
 import './SearchBar.styles.css';
 import { useSearchParams } from 'react-router-dom';
 
-interface Product {
+export interface Product {
     id: number;
     name: string;
 }
 
-interface SearchBarProps {
+export interface SearchBarProps {
     setResults: (results: Product[]) => void;
+    initialQuery: string;
+    onSearch: (query: string) => void;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
@@ -42,6 +44,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
     useEffect(() => {
         setInput(filter);
         fetchData(filter);
+        // eslint-disable-next-line
     }, [filter]);
 
     return (

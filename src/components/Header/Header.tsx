@@ -1,15 +1,14 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./Header.styles.css"
-import { useShoppingCart } from "../../types/context/ShoppingCartContext"
 import { FiLogOut, FiShoppingCart } from 'react-icons/fi';
-import { AiOutlineHeart } from 'react-icons/ai'
 import { useContext } from "react";
-import { AuthContext } from "../../auth/context/authContext";
+import { AuthContext, AuthContextType } from "../../auth/context/authContext";
+import { useShoppingCart } from "../../types/context/useShoopingCart";
 
 
 export function Header() {
     const { openCart, cartQuantity } = useShoppingCart()
-    const { user, logout } = useContext(AuthContext);
+    const { user, logout }: AuthContextType = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -45,9 +44,6 @@ export function Header() {
                         window.location.reload();
                     }} >
                         <FiLogOut size={35} />
-                    </button>
-                    <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}>
-                        <AiOutlineHeart size={35} />
                     </button>
                     {cartQuantity >= 0 && (
                         <button

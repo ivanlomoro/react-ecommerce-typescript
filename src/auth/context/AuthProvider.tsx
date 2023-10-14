@@ -1,20 +1,32 @@
-
-import { useReducer } from "react";
+import { ReactNode, useReducer } from "react";
 import { types } from "./types/types";
-
 import authReducer from "./authReducer";
 import { AuthContext } from "./authContext";
 
 
 const init = () => {
-    const user = JSON.parse(localStorage.getItem('user'));
-    return {
-        isLogged: !!user,
-        user
+    const userString = localStorage.getItem('user');
+
+    if (userString) {
+        try {
+            const user = JSON.parse(userString);
+            return {
+                isLogged: true,
+                user
+            };
+        } catch (error) {
+            console.error("Error parsing user data from localStorage:", error);
+        }
     }
+
+    return {
+        isLogged: false,
+        user: null
+    };
 }
 
-const AuthProvider = ({ children }) => {
+
+const AuthProvider = ({ children }: { children: ReactNode }) => {
 
     const [authState, dispatch] = useReducer(authReducer, {}, init)
 

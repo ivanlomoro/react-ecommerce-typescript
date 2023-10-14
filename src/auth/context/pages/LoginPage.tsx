@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../authContext';
+import { AuthContext, AuthContextType } from '../authContext';
 import "./LoginPage.styles.css";
 
 export const LoginPage = () => {
-  const { login } = useContext(AuthContext);
+  const { login } = useContext<AuthContextType>(AuthContext);
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

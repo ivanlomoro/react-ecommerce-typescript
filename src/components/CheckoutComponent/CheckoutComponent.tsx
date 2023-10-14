@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './CheckoutComponent.styles.css';
-import { useShoppingCart } from '../../types/context/ShoppingCartContext';
 import { StoreProductsProps } from '../../types/product';
 import { formatCurrency } from '../../utils/formatCurrency';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +9,7 @@ import { EffectCards } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import type { SweetAlertResult } from 'sweetalert2';
+import { useShoppingCart } from '../../types/context/useShoopingCart';
 
 
 

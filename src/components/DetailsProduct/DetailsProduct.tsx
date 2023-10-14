@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { StoreProductsProps } from "../../types/product";
 import { Row, Col } from "react-bootstrap";
 import { PiKeyReturnBold } from 'react-icons/pi'
 import "./DetailsProduct.styles.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useShoppingCart } from "../../types/context/useShoopingCart";
 
 export function DetailsProduct() {
     const { productId } = useParams<{ productId: string }>();

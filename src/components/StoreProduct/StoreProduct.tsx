@@ -1,15 +1,14 @@
 import { formatCurrency } from "../../utils/formatCurrency";
-import { useShoppingCart } from "../../types/context/ShoppingCartContext";
 import { StoreProductsProps } from "../../types/product";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './StoreProduct.styles.css'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useShoppingCart } from "../../types/context/useShoopingCart";
 
 export function StoreProduct({ id, name, price, imgUrl, imgUrlAlt, }: StoreProductsProps) {
-  const { getProductQuantity, increaseCartQuantity} = useShoppingCart();
-  const quantity = getProductQuantity(id);
+  const { increaseCartQuantity} = useShoppingCart();
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div

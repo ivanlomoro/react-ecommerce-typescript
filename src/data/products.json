@@ -62,7 +62,7 @@
     },
     {
         "id": 7,
-        "name":"Harry Potter",
+        "name":"Harry",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/hp/hp1.jpg",
         "imgUrlAlt": "../src/assets/imgs/hp/hp1_box.jpg",
@@ -132,7 +132,7 @@
     },
     {
         "id": 14,
-        "name":"Iron Man",
+        "name":"Iron-Man",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel2.jpg",
         "imgUrlAlt": "../src/assets/imgs/marvel/marvel2_box.jpg",
@@ -162,7 +162,7 @@
     },
     {
         "id": 17,
-        "name":"Black Panther",
+        "name":"B. Panther",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/marvel/marvel5.jpg",
         "imgUrlAlt": "../src/assets/imgs/marvel/marvel5_box.jpg",
@@ -182,7 +182,7 @@
     },
     {
         "id": 19,
-        "name":"Max Verstappen",
+        "name":"Verstappen",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport1.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport1_box.jpg",
@@ -192,7 +192,7 @@
     },
     {
         "id": 20,
-        "name":"Checo Perez",
+        "name":"Checo",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport2.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport2_box.jpg",
@@ -202,7 +202,7 @@
     },
     {
         "id": 21,
-        "name":"Roger Federer",
+        "name":"Federer",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport3.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport3_box.jpg",
@@ -212,7 +212,7 @@
     },
     {
         "id": 22,
-        "name":"Rafa Nadal",
+        "name":"Nadal",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport4.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport4_box.jpg",
@@ -222,7 +222,7 @@
     },
     {
         "id": 23,
-        "name":"Lebron James",
+        "name":"Lebron",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport5.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport5_box.jpg",
@@ -232,7 +232,7 @@
     },
     {
         "id": 24,
-        "name":"Michael Jordan",
+        "name":"Jordan",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/sports/sport6.jpg",
         "imgUrlAlt": "../src/assets/imgs/sports/sport6_box.jpg",
@@ -252,7 +252,7 @@
     },
     {
         "id": 26,
-        "name":"Darth-Vader",
+        "name":"D. Vader",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw2.jpg",
         "imgUrlAlt": "../src/assets/imgs/starswars/sw2_box.jpg",
@@ -262,7 +262,7 @@
     },
     {
         "id": 27,
-        "name":"Luke with Grogu",
+        "name":"Luke",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw3.jpg",
         "imgUrlAlt": "../src/assets/imgs/starswars/sw3_box.jpg",
@@ -272,7 +272,7 @@
     },
     {
         "id": 28,
-        "name":"Princess Leia",
+        "name":"Leia",
         "price":14.99,
         "imgUrl": "../src/assets/imgs/starswars/sw4.jpg",
         "imgUrlAlt": "../src/assets/imgs/starswars/sw4_box.jpg",
@@ -292,7 +292,7 @@
     },
     {
         "id": 30,
-        "name":"General Grievous",
+        "name":"Grievous",
         "price":14.99,
         "imgUrl": "./src/assets/imgs/starswars/sw6.jpg",
         "imgUrlAlt": "../src/assets/imgs/starswars/sw6_box.jpg",
