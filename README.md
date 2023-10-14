@@ -38,7 +38,9 @@ git clone https://github.com/ivanlomoro/react-ecommerce-typescript.git
 ```
 
 2. Navigate to the project directory:
+```sh
 cd react-ecommerce-typescript
+```
 
 3. Install the dependencies:
 ```
