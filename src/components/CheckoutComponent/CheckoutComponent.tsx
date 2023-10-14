@@ -197,6 +197,7 @@ export function CheckoutComponent() {
                             </div>
                         </div>
                         <div className='btn-checkout-container'>
+                            <button onClick={backStep} className='btn-big checkout-btn'>Back</button>
                             <button type="button" className='btn-big checkout-btn' onClick={handleCheckoutButoon}>
                                 Place order!
                             </button>

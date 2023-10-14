@@ -1,43 +1,42 @@
-
-.container{
+.container {
     max-width: 1400px;
-    margin:auto;
+    margin: auto;
 }
 
-header{
+header {
     background-color: var(--background-color);
-    top: 0px;  
+    top: 0px;
     position: sticky;
     z-index: 10;
 }
 
-header .img{
+header .img {
     display: inline-block;
 }
 
-header .icono{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    font-size: 26px;
+.img-icon {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 
-header .container{
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 10px 0;
 }
 
-header nav{
+
+header nav {
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
@@ -46,29 +45,29 @@ header a{
     transition: 0.5s;
 }
 
-header a:hover{
+header a:hover {
     color: var(--primary-color);
     transition: 0.5s;
     border-radius: 15px;
 }
 
 header .cart {
-    margin-left: auto; 
+    margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-header .login{
-    margin-left: auto; 
+header .login {
+    margin-left: auto;
     display: flex;
     align-items: center;
 }
 
 .user-icon {
     width: 3rem;
-     height: 3rem;
-    background-color: var(--primary-color); 
-    border-radius: 50%; 
+    height: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +77,7 @@ header .login{
 
 .user-icon img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 .user-info {
@@ -89,3 +88,91 @@ header .login{
     font-weight: bold;
 }
 
+.cart-button {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.cart-button .cart-counter {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    transform: translate(30%, 25%);
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-icon {
+    font-size: 35px;
+}
+
+.cart-icon {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .cart {
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .img-icon {
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    header a {
+        margin: -.3rem;
+    }
+
+    .user-info {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .user-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.2rem;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .cart-button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .cart-button .cart-counter {
+        width: 1.5rem;
+        height: 1.5rem;
+        bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .logout-icon {
+        font-size: 20px;
+        margin-left: 0.5rem;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+}

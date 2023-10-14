@@ -294,7 +294,7 @@
         "id": 30,
         "name":"Grievous",
         "price":14.99,
-        "imgUrl": "./src/assets/imgs/starswars/sw6.jpg",
+        "imgUrl": "../src/assets/imgs/starswars/sw6.jpg",
         "imgUrlAlt": "../src/assets/imgs/starswars/sw6_box.jpg",
         "category": 5,
         "topSale":false,

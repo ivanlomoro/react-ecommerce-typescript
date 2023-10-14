@@ -1,4 +1,4 @@
-.results-list{
+.results-list {
     width: 100%;
     background-color: white;
     display: flex;
@@ -8,4 +8,10 @@
     margin-top: 1rem;
     max-height: 300px;
     overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+    .results-list {
+        max-height: 200px;
+    }
 }

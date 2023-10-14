@@ -4,7 +4,9 @@ import { FiLogOut, FiShoppingCart } from 'react-icons/fi';
 import { useContext } from "react";
 import { AuthContext, AuthContextType } from "../../auth/context/authContext";
 import { useShoppingCart } from "../../types/context/useShoopingCart";
-
+import { BiHomeAlt2 } from "react-icons/bi";
+import { LuStore } from 'react-icons/lu'
+import { BsSearch } from "react-icons/bs";
 
 export function Header() {
     const { openCart, cartQuantity } = useShoppingCart()
@@ -23,12 +25,27 @@ export function Header() {
         <header>
             <div className="container">
                 <Link to="/">
-                    <img src="/icono_page.png" alt="Icono" width="80" height="70" style={{ borderRadius: '50%' }} />
+                    <img src="/icono_page.png" className="img-icon" alt="Icono" />
                 </Link>
                 <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/store">Store</Link>
-                    <Link to="/search">Search</Link>
+                    <Link to="/">
+                        <div className="nav-icon">
+                            <BiHomeAlt2 />
+                        </div>
+                        <span className="nav-text">Home</span>
+                    </Link>
+                    <Link to="/store">
+                        <div className="nav-icon">
+                            <LuStore />
+                        </div>
+                        <span className="nav-text">Store</span>
+                    </Link>
+                    <Link to="/search">
+                        <div className="nav-icon">
+                            <BsSearch />
+                        </div>
+                        <span className="nav-text">Search</span>
+                    </Link>
                 </nav>
                 <div className="cart">
                     <span className="user-info">
@@ -43,15 +60,15 @@ export function Header() {
                         onLogout();
                         window.location.reload();
                     }} >
-                        <FiLogOut size={35} />
+                        <FiLogOut className="logout-icon" />
                     </button>
                     {cartQuantity >= 0 && (
                         <button
                             onClick={openCart}
-                            style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }}
+                            className="cart-button"
                         >
-                            <FiShoppingCart size={35} />
-                            <div className="rounded-circle bg-secondary d-flex justify-content-center align-items-center" style={{ color: "white", width: "1.8rem", height: "1.8rem", position: "absolute", bottom: 30, right: 0, transform: "translate(30%,25%)", fontSize: "1.2rem" }}>
+                            <FiShoppingCart className="cart-icon" />
+                            <div className="cart-counter">
                                 {cartQuantity}
                             </div>
                         </button>
