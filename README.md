@@ -1,12 +1,10 @@
-<img src="/src/assets/imgs/favicon_page.png" alt="tittle pag" style="border-radius: 50%;/>
+<img src="/src/assets/imgs/favicon_page.png" alt="tittle pag"/>
 
 # React Ecommerce - FunkoLand !
 
 This project is a Funko ecommerce site developed in React with TypeScript, using Vite and JSON-Server to simulate a local product API.
 
 ## Table of Contents
-- [React Ecommerce - Funko Store](#react-ecommerce---funko-store)
-- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
@@ -35,13 +33,17 @@ To run the project, you need to have the following requirements installed:
 ## Installation
 Follow these steps to install the project:
 1. Clone the repository:
+```sh
 git clone https://github.com/ivanlomoro/react-ecommerce-typescript.git
+```
 
 2. Navigate to the project directory:
 cd react-ecommerce-typescript
 
 3. Install the dependencies:
+```
 pnpm install
+```
 
 ## Usage
 To run the project, first start JSON-Server to simulate the product API with the following command:
