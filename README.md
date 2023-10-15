@@ -43,25 +43,30 @@ cd react-ecommerce-typescript
 ```
 
 3. Install the dependencies:
-```
+```sh
 pnpm install
 ```
 
 ## Usage
-To run the project, first start JSON-Server to simulate the product API with the following command:
-```sh
-json-server --watch data.json --port 3001
+
+To run the project, use the following commands:
+1. Run JSON server:
+
+ ```sh
+      pnpm run json-server
 ```
-Resources
+- Resources
   http://localhost:3001/products
-  Home
+
+ - Home
   http://localhost:3001
 
-Then, start the application with Vite:
+2. Run the development server:
 
-```sh
-pnpm run dev
+ ```sh
+   pnpm run dev
 ```
+
 Access the project through your browser at http://localhost:5173.
 
 ## Technologies and Concepts
