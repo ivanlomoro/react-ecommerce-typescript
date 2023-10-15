@@ -60,7 +60,7 @@ Additionally, you can find an example of the .env file in the config folder name
 2. Run JSON server:
 
  ```sh
-      pnpm run json-server
+pnpm run json-server
 ```
 - Resources
   http://localhost:3001/products
@@ -71,7 +71,7 @@ Additionally, you can find an example of the .env file in the config folder name
 3. Run the development server:
 
  ```sh
-   pnpm run dev
+pnpm run dev
 ```
 
 Access the project through your browser at http://localhost:5173.
