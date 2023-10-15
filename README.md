@@ -49,8 +49,15 @@ pnpm install
 
 ## Usage
 
-To run the project, use the following commands:
-1. Run JSON server:
+To run the project, follow these steps and commands:
+
+1. Create a `.env` file in the root of your project with the following content:
+```sh
+VITE_API_BASE_URL=http://localhost:3001/products
+```
+Additionally, you can find an example of the .env file in the config folder named env.example. This file serves as a template for your configuration.
+
+2. Run JSON server:
 
  ```sh
       pnpm run json-server
@@ -61,7 +68,7 @@ To run the project, use the following commands:
  - Home
   http://localhost:3001
 
-2. Run the development server:
+3. Run the development server:
 
  ```sh
    pnpm run dev
