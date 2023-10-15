@@ -14,6 +14,7 @@ import { StoreProduct } from '../StoreProduct/StoreProduct';
 export function StoreComponent() {
     const [products, setProducts] = useState<StoreProductsProps[]>([]);
     const [, setProductDetails] = useState<StoreProductsProps[]>([]);
+    const url = import.meta.env.VITE_API_BASE_URL;
 
     function shuffleArray(array: StoreProductsProps[]) {
         const shuffledArray = [...array];
@@ -27,7 +28,7 @@ export function StoreComponent() {
     const randomProducts = shuffleArray(products.filter((product) => !product.topSale));
 
     useEffect(() => {
-        fetch("http://localhost:3001/products")
+        fetch(url)
             .then((response) => response.json())
             .then((data: StoreProductsProps[]) => {
                 setProducts(data);

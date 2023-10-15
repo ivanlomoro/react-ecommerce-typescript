@@ -22,6 +22,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     const [isOpen, setIsOpen] = useState(false)
     const [cartProducts, setCartProducts] = useLocalStorage<CartProduct[]>("shopping-cart",[])
     const [productDetails, setProductDetails] = useState<StoreProductsProps[]>([]);
+    const url = import.meta.env.VITE_API_BASE_URL;
 
     const cartQuantity = cartProducts.reduce(
         (quantity, item) => item.quantity + quantity,
@@ -42,7 +43,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
             return existingProduct;
         } else {
             try {
-                const response = await fetch(`http://localhost:3001/products/${id}`);
+                const response = await fetch(`${url}/${id}`);
                 if (!response.ok) {
                     throw new Error("Error getting product details.");
                 }

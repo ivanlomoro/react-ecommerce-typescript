@@ -18,9 +18,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
     const [input, setInput] = useState<string>("");
     const [searchParams, setSearchParams] = useSearchParams();
     const filter = searchParams.get("q") || "";
+    const url = import.meta.env.VITE_API_BASE_URL;
 
     const fetchData = (value: string) => {
-        fetch("http://localhost:3001/products")
+        fetch(url)
             .then((response) => response.json())
             .then((json) => {
                 const results = json.filter((product: Product) => {
