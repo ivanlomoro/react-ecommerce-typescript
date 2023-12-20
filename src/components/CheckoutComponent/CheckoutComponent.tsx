@@ -180,8 +180,8 @@ export function CheckoutComponent() {
                         <div className="card-container">
                             <div className="credit-card">
                                 <div className='image-container'>
-                                    <img src="/src/components/CheckoutComponent/imgs/visa.jpg" alt="visa-icon" className="logo-card" />
-                                    <img src="/src/components/CheckoutComponent/imgs/aiticono.jpg" alt="ait-icon" className="logo-card ait-logo" />
+                                    <img src="https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703078129/funkoland/icon/visa_avyt2b.png" alt="visa-icon" className="logo-card" />
+                                    <img src="https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703078124/funkoland/icon/aiticono_qqddwr.jpg" alt="ait-icon" className="logo-card ait-logo" />
                                 </div>
                                 <label className='creditcard-label'>Card number:</label>
                                 <input id="user" type="text" className="creditcard-input cardnumber" placeholder="1234 5678 9101 1121" />
