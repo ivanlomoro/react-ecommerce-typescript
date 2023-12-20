@@ -1,304 +1,304 @@
 {
-  "products": [
-    {
-        "id": 1,
-        "name":"Yami Yugi",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime1.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime1_box.jpg",
-        "category": 1,
-        "topSale":false,
-        "description": "Battle! Pop! Yami Yugi is ready to duel against his rival Duelists in your Yu-Gi-Oh collection! Draw the strongest cards in your deck and summon Pop! Yami Yugi (Demon Kingdom) into your Dueling Arena. Vinyl figure is approximately 11.9 tall."
-    },
-    {
-        "id": 2,
-        "name":"Seto Kaiba",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime2.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime2_box.jpg",
-        "category": 1,
-        "topSale":false,
-        "description": "Battle! Pop! Seto Kaiba is ready to duel against his rival Duelists in your Yu-Gi-Oh collection! Draw the strongest cards in your deck and summon Pop! Seto Kaiba (Demon Kingdom) into your Dueling Arena. Vinyl figure is approximately 10 cm tall."
-    },
-    {
-        "id": 3,
-        "name":"Goku",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime3.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime3_box.jpg",
-        "category": 1,
-        "topSale":false,
-        "description":"Goku has taken on a new, angelic form! This Dragon Ball Z Pop! Goku with Wings is ready to fly into your collection. There’s a 1 in 6 chance you may find the glow-in-the-dark chase of Pop! Goku with Wings. Vinyl figure is approximately 14.3 cm tall. Chase variants are shipped at random. Receiving a chase with purchase is not guaranteed."
-    },
-    {
-        "id": 4,
-        "name":"Cell",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime4.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime4_box.jpg",
-        "category": 1,
-        "topSale":true,
-        "description":"Cell has taken on a new, menacing form! This Dragon Ball Z Pop! Cell with Wings is ready to soar into your collection. There's a 1 in 6 chance you may find the glow-in-the-dark chase variant of Pop! Cell with Wings. The vinyl figure stands approximately 14.3 cm tall. Chase variants are shipped randomly, and receiving one is not guaranteed with your purchase."
-    },
-    {
-        "id": 5,
-        "name":"Homer",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime5.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime5_box.jpg",
-        "category": 1,
-        "topSale":true,
-        "description":"Cue the awkward moment! Pop! Homer Simpson backs into the bushes to escape embarrassment. You could hedge your bets that he’ll want to join your Simpsons collection. However, it’s probably best to grab Funko Pop! vinyl figure of Homer Simpson in Hedges before he disappears. Vinyl figure is approximately 14 cm tall."
-    },
-    {
-        "id": 6,
-        "name":"Hugo",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/animation/anime6.jpg",
-        "imgUrlAlt": "../src/assets/imgs/animation/anime6_box.jpg",
-        "category": 1,
-        "topSale":false,
-        "description":"Halloween decorations and displays of The Simpsons get weirder with Funko Pop! vinyl figure of Hugo Simpson! Bart's evil twin has appeared due to a Treehouse of Horror twist of events. With Pop! Hugo Simpson there’s no need to take down your display for the animated comedy show during the spooky season. Vinyl figures are approximately 11.4 cm tall."
-    },
-    {
-        "id": 7,
-        "name":"Harry",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp1.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp1_box.jpg",
-        "category": 2,
-        "topSale":true,
-        "description":"Boning up on his knowledge of potions, Pop! Harry Potter is on the mend. Wave a wand and add Pop! Harry Potter, who is holding a bone regeneration potion bottle to your collection. Will the potion work to fix a bone broken during a Quidditch Match? The process might be painful, and the potion might not taste very good, but Pop! Harry Potter must persist. Vinyl figure is approximately 9.1cm tall."
-    },
-    {
-        "id": 8,
-        "name":"Dobby",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp2.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp2_box.jpg",
-        "category": 2,
-        "topSale":false,
-        "description":"He's finally free! Welcome home one of the most well-known and lovable house elves of the Wizarding World with this Funko Pop! vinyl figure of Dobby! Vinyl figure is approximately 8.9 cm tall."
-    },
-    {
-        "id": 9,
-        "name":"Ron",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp3.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp3_box.jpg",
-        "category": 2,
-        "topSale":false,
-        "description":"Escape in a ride where all windows are sky-view. Hop into this Super Deluxe Pop! Ride with Ron Weasley™ at the wheel. The invisibility booster of the car might not be reliable, but Pop! Ron Weasley is delivering a daring rescue. Add Pop! Weasley in his Flying Car to your Harry Potter™ collection and celebrate the Harry Potter and The Chamber of Secrets movie. Create magical adventures by expanding your Wizarding World™ set. Collect them all. Vinyl figure is approximately 11.3 cm tall."
-    },
-    {
-        "id": 10,
-        "name":"Hermione",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp4.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp4_box.jpg",
-        "category": 2,
-        "topSale":false,
-        "description":"Add some magic to your Harry Potter collection with this Hermione Granger Funko Pop! Vinyl figure. As Ron Weasley once said, he and Harry, “wouldn’t last two days without her.” This vinyl figure of Hermione, one of the brightest witches of her age, is dressed in her school robes ready to take on everything that Hogwarts School of Witchcraft and Wizardry has to offer."
-    },
-    {
-        "id": 11,
-        "name":"Hagrid",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp5.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp5_box.jpg",
-        "category": 2,
-        "topSale":false,
-        "description":"Add some magic to your Harry Potter collection with this Hagrid Funko Pop! Vinyl figures are approximately 10 cm tall and 17.4 cm tall."
-    },
-    {
-        "id": 12,
-        "name":"Dumbledore",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/hp/hp6.jpg",
-        "imgUrlAlt": "../src/assets/imgs/hp/hp6_box.jpg",
-        "category": 2,
-        "topSale":false,
-        "description":"Take a trip out of Hogwarts and visit Hogsmeade with the Pop! Town Albus Dumbledore with The Hog's Head Inn. Build Hogsmeade in your Wizarding World collection by completing the set! Vinyl figures are approximately 10 cm tall and 17.4 cm tall."
-    },
-    {
-        "id": 13,
-        "name":"Spider-Man",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel1.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel1_box.jpg",
-        "category": 3,
-        "topSale":true,
-        "description":"Defend humanity with Marvel’s Pop! Spider-Man! Complete your Marvel Studios’ Captain America: Civil War collection with this web-slinger and assemble your team to build a scene of your favourite heroes. Comprised of 12 separate figures, each Pop! in this series can be displayed on its own or nested with other figures from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favourite characters. Each figure is fixed to its base for ease of display. Each figure will be available for individual purchase, as they are announced. Figures will continue to be announced monthly and be made available throughout 2023. Vinyl bobblehead is approximately 12.5 cm tall and comes in a window display box. Find more Funko products at Amazon."
-    },
-    {
-        "id": 14,
-        "name":"Iron-Man",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel2.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel2_box.jpg",
-        "category": 3,
-        "topSale":false,
-        "description":"Defend humanity with Marvel’s Pop! Iron Man! Complete your Marvel Studios’ Captain America: Civil War collection with this brilliant inventor in his red and gold suit of armor and assemble your team to build a scene of your favorite heroes. Comprised of 12 separate collectibles, each Pop! in this series can be displayed on its own or nested with others from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favorite characters. Each collectible is fixed to its base for ease of display. Each Pop! will be available for individual purchase, as they are announced. Collectibles will continue to be announced monthly and be made available throughout 2023. Vinyl bobblehead is approximately 9.8 cm tall and comes in a window display box. Find more Funko products at Amazon."
-    },
-    {
-        "id": 15,
-        "name":"Thor",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel3.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel3_box.jpg",
-        "category": 3,
-        "topSale":false,
-        "description":"Electrify your Marvel collection with Entertainment Earth-exclusive Pop! Ravager Thor from Marvel Studios' Thor: Love and Thunder. Lead the charge with Pop! Ravager Thor and expand your Marvel set. Vinyl bobblehead is 10.1cm tall."
-    },
-    {
-        "id": 16,
-        "name":"Groot",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel4.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel4_box.jpg",
-        "category": 3,
-        "topSale":false,
-        "description":"Take off on a galactic adventure with dancing Pop! Groot in Onesie! Complete your I Am Groot collection with this baby Flora Colossus hero. Vinyl bobblehead is approximately 8.3 cm tall."
-    },
-    {
-        "id": 17,
-        "name":"B. Panther",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel5.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel5_box.jpg",
-        "category": 3,
-        "topSale":false,
-        "description":"Defend humanity and celebrate Disney’s 100th Anniversary with Marvel’s Pop! Black Panther! His vibranium mantle has been upgraded in this exclusive variant to a faceted suit. Strengthen your team of heroes by bringing the King of Wakanda into your Marvel collection. Vinyl bobblehead is approximately 9.6 cm tall."
-    },
-    {
-        "id": 18,
-        "name":"Thanos",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/marvel/marvel6.jpg",
-        "imgUrlAlt": "../src/assets/imgs/marvel/marvel6_box.jpg",
-        "category": 3,
-        "topSale":false,
-        "description":"In his quest to bring balance to the universe, Thanos has launched a plan to infiltrate your Marvel Black Light collection as a Pop! figure. Will Pop! Thanos bring balance or will the Avengers save the day? Vinyl bobblehead is approximately 13 cm tall."
-    },
-    {
-        "id": 19,
-        "name":"Verstappen",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport1.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport1_box.jpg",
-        "category": 4,
-        "topSale":false,
-        "description":"Pop! Max Verstappen is looking to take first place in your collection! Race to add this Red Bull® Racing motorist to your Oracle Red Bull Racing collection. Vinyl figure is approximately 10 cm tall."
-    },
-    {
-        "id": 20,
-        "name":"Checo",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport2.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport2_box.jpg",
-        "category": 4,
-        "topSale":false,
-        "description":"Pop! Sergio Perez is looking to take first place in your collection! Race to add this Red Bull® Racing motorist to your Oracle Red Bull Racing collection. Vinyl figure is approximately 10 cm tall."
-    },
-    {
-        "id": 21,
-        "name":"Federer",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport3.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport3_box.jpg",
-        "category": 4,
-        "topSale":false,
-        "description":"Roger Federer has donned a new, legendary look! This Roger Federer Funko Pop! with a Tennis Racket is poised to serve its way into your collection. There's a 1 in 6 chance you may discover the exclusive chase variant, featuring a different outfit. Standing at approximately 10 cm tall, this vinyl figure captures the essence of the tennis icon. Chase variants are distributed randomly, and obtaining one is not guaranteed with your purchase. Get ready to add this iconic collectible to your lineup!"
-    },
-    {
-        "id": 22,
-        "name":"Nadal",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport4.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport4_box.jpg",
-        "category": 4,
-        "topSale":true,
-        "description":"Rafael Nadal has transformed into a legendary collectible! Introducing the Rafael Nadal Funko Pop! with Tennis Racquet, a must-have for tennis enthusiasts. Standing at approximately 10 cm tall, this vinyl figure embodies the spirit of the tennis icon in his signature attire. Don't miss the chance to uncover the exclusive chase variant, featuring a unique outfit, with a 1 in 6 odds of finding it in your purchase. Chase variants are sent randomly, and securing one is not guaranteed. Elevate your collection with this iconic representation of Rafa Nadal in action!"
-    },
-    {
-        "id": 23,
-        "name":"Lebron",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport5.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport5_box.jpg",
-        "category": 4,
-        "topSale":false,
-        "description":"LeBron James has arrived in Funko Pop! form, and he's ready to dominate your collection. The LeBron James Funko Pop! captures the essence of this basketball legend, standing at approximately 10 cm tall. This vinyl figure showcases LeBron in his iconic uniform, making it a must-have for fans and collectors alike."
-    },
-    {
-        "id": 24,
-        "name":"Jordan",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/sports/sport6.jpg",
-        "imgUrlAlt": "../src/assets/imgs/sports/sport6_box.jpg",
-        "category": 4,
-        "topSale":false,
-        "description":"Michael Jordan, the legendary basketball icon, is now available in Funko Pop! form. Standing at approximately 10 cm tall, this Funko Pop! captures the essence of the basketball legend, featuring his iconic Chicago Bulls uniform and signature sneakers. Whether you're a basketball enthusiast or a collector, this Michael Jordan Funko Pop! is a must-have addition to your collection. Don't miss out on the chance to own a piece of basketball history."
-    },
-    {
-        "id": 25,
-        "name":"Obi-Wan",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw1.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw1_box.jpg",
-        "category": 5,
-        "topSale":false,
-        "description":"Obi-Wan Kenobi, the wise and valiant Jedi Master from the Star Wars galaxy, is now immortalized in this Funko Pop! figure. Standing at approximately 10 cm tall, this collectible showcases Obi-Wan's iconic Jedi robe and lightsaber, making it a must-have for any Star Wars fan or collector. Join Obi-Wan Kenobi on his heroic adventures and add this Pop! figure to your collection today. May the Force be with you!"
-    },
-    {
-        "id": 26,
-        "name":"D. Vader",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw2.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw2_box.jpg",
-        "category": 5,
-        "topSale":true,
-        "description":"Darth Vader, the menacing Sith Lord from the Star Wars universe, is brought to life in this impressive Funko Pop! figure. Standing at approximately 10 cm tall, this collectible showcases Darth Vader's iconic black armor, flowing cape, and red lightsaber. Whether you're a dedicated Star Wars enthusiast or just appreciate captivating villains, this Pop! figure is a must-have addition to your collection. Join the dark side and embrace the power of the Force with Darth Vader!"
-    },
-    {
-        "id": 27,
-        "name":"Luke",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw3.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw3_box.jpg",
-        "category": 5,
-        "topSale":false,
-        "description":"Luke Skywalker, the legendary Jedi Knight, is captured in a heartwarming moment as he cradles Grogu, affectionately known as The Child or Baby Yoda, in his arms. This endearing Funko Pop! figurine stands at approximately 10 cm tall and beautifully portrays Luke's likeness along with Grogu's adorable features. It's a delightful representation of the iconic duo from the Star Wars universe, making it a cherished addition to any collector's shelf. Relive the magic of Luke and Grogu's encounter with this charming Pop! figure."
-    },
-    {
-        "id": 28,
-        "name":"Leia",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw4.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw4_box.jpg",
-        "category": 5,
-        "topSale":false,
-        "description":"Princess Leia, the fearless leader of the Rebel Alliance, is commemorated in this captivating Funko Pop! figure. Standing at approximately 10 cm tall, this vinyl collectible showcases Leia's unmistakable likeness, complete with her signature hairstyle and determined expression. Whether you're a lifelong Star Wars fan or a casual collector, this Pop! Leia figurine is a must-have addition to your collection. Pay tribute to the iconic heroine who played a pivotal role in the galaxy's fight for freedom with this charming piece of memorabilia."
-    },
-    {
-        "id": 29,
-        "name":"R2-D2",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw5.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw5_box.jpg",
-        "category": 5,
-        "topSale":false,
-        "description":"R2-D2, the beloved astromech droid from the Star Wars universe, comes to life in this charming Funko Pop! figure. Standing at approximately 10 cm tall, R2-D2 is intricately detailed with all the iconic features that make this droid a fan favorite. From its distinctive domed head to its rolling wheels, this vinyl collectible captures the essence of R2-D2's endearing character. Whether you're a dedicated Star Wars enthusiast or just starting your Funko Pop! collection, R2-D2 is a delightful addition that will bring a touch of the galaxy far, far away to your display shelf."
-    },
-    {
-        "id": 30,
-        "name":"Grievous",
-        "price":14.99,
-        "imgUrl": "../src/assets/imgs/starswars/sw6.jpg",
-        "imgUrlAlt": "../src/assets/imgs/starswars/sw6_box.jpg",
-        "category": 5,
-        "topSale":false,
-        "description":"General Grievous, the formidable cyborg leader of the Separatist Droid Army from the Star Wars saga, is brilliantly captured in this Funko Pop! figure. Standing at approximately 10 cm tall, General Grievous showcases his distinctive design with multiple arms, lightsabers, and intricate details. This vinyl collectible perfectly encapsulates the menace and power of the character. Whether you're a die-hard Star Wars fan or a collector of unique Funko Pop! figures, General Grievous is an excellent addition to your display, showcasing one of the galaxy's most iconic villains in all his glory."
-    }
-]
-}
+    "products": [
+      {
+          "id": 1,
+          "name":"Yami Yugi",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077176/funkoland/animation/anime1_j0lfik.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime1_box_vpeotv.webp",
+          "category": 1,
+          "topSale":false,
+          "description": "Battle! Pop! Yami Yugi is ready to duel against his rival Duelists in your Yu-Gi-Oh collection! Draw the strongest cards in your deck and summon Pop! Yami Yugi (Demon Kingdom) into your Dueling Arena. Vinyl figure is approximately 11.9 tall."
+      },
+      {
+          "id": 2,
+          "name":"Seto Kaiba",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077176/funkoland/animation/anime2_tcirg2.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime2_box_rktzes.webp",
+          "category": 1,
+          "topSale":false,
+          "description": "Battle! Pop! Seto Kaiba is ready to duel against his rival Duelists in your Yu-Gi-Oh collection! Draw the strongest cards in your deck and summon Pop! Seto Kaiba (Demon Kingdom) into your Dueling Arena. Vinyl figure is approximately 10 cm tall."
+      },
+      {
+          "id": 3,
+          "name":"Goku",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime3_bouxyj.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime3_box_xeyhq5.webp",
+          "category": 1,
+          "topSale":false,
+          "description":"Goku has taken on a new, angelic form! This Dragon Ball Z Pop! Goku with Wings is ready to fly into your collection. There’s a 1 in 6 chance you may find the glow-in-the-dark chase of Pop! Goku with Wings. Vinyl figure is approximately 14.3 cm tall. Chase variants are shipped at random. Receiving a chase with purchase is not guaranteed."
+      },
+      {
+          "id": 4,
+          "name":"Cell",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime4_qq7vhu.png",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime4_box_xom1vx.png",
+          "category": 1,
+          "topSale":true,
+          "description":"Cell has taken on a new, menacing form! This Dragon Ball Z Pop! Cell with Wings is ready to soar into your collection. There's a 1 in 6 chance you may find the glow-in-the-dark chase variant of Pop! Cell with Wings. The vinyl figure stands approximately 14.3 cm tall. Chase variants are shipped randomly, and receiving one is not guaranteed with your purchase."
+      },
+      {
+          "id": 5,
+          "name":"Homer",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime5_yayz9v.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime5_box_nqmqzw.webp",
+          "category": 1,
+          "topSale":true,
+          "description":"Cue the awkward moment! Pop! Homer Simpson backs into the bushes to escape embarrassment. You could hedge your bets that he’ll want to join your Simpsons collection. However, it’s probably best to grab Funko Pop! vinyl figure of Homer Simpson in Hedges before he disappears. Vinyl figure is approximately 14 cm tall."
+      },
+      {
+          "id": 6,
+          "name":"Hugo",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime6_hlb37d.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime6_box_r2uosq.webp",
+          "category": 1,
+          "topSale":false,
+          "description":"Halloween decorations and displays of The Simpsons get weirder with Funko Pop! vinyl figure of Hugo Simpson! Bart's evil twin has appeared due to a Treehouse of Horror twist of events. With Pop! Hugo Simpson there’s no need to take down your display for the animated comedy show during the spooky season. Vinyl figures are approximately 11.4 cm tall."
+      },
+      {
+          "id": 7,
+          "name":"Harry",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077178/funkoland/hp/hp1_qrccge.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077178/funkoland/hp/hp1_box_authbk.webp",
+          "category": 2,
+          "topSale":true,
+          "description":"Boning up on his knowledge of potions, Pop! Harry Potter is on the mend. Wave a wand and add Pop! Harry Potter, who is holding a bone regeneration potion bottle to your collection. Will the potion work to fix a bone broken during a Quidditch Match? The process might be painful, and the potion might not taste very good, but Pop! Harry Potter must persist. Vinyl figure is approximately 9.1cm tall."
+      },
+      {
+          "id": 8,
+          "name":"Dobby",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077178/funkoland/hp/hp2_um77ir.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077178/funkoland/hp/hp2_box_qolmuw.webp",
+          "category": 2,
+          "topSale":false,
+          "description":"He's finally free! Welcome home one of the most well-known and lovable house elves of the Wizarding World with this Funko Pop! vinyl figure of Dobby! Vinyl figure is approximately 8.9 cm tall."
+      },
+      {
+          "id": 9,
+          "name":"Ron",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077178/funkoland/hp/hp3_vd7jxt.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp3_box_dpkkh4.webp",
+          "category": 2,
+          "topSale":false,
+          "description":"Escape in a ride where all windows are sky-view. Hop into this Super Deluxe Pop! Ride with Ron Weasley™ at the wheel. The invisibility booster of the car might not be reliable, but Pop! Ron Weasley is delivering a daring rescue. Add Pop! Weasley in his Flying Car to your Harry Potter™ collection and celebrate the Harry Potter and The Chamber of Secrets movie. Create magical adventures by expanding your Wizarding World™ set. Collect them all. Vinyl figure is approximately 11.3 cm tall."
+      },
+      {
+          "id": 10,
+          "name":"Hermione",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp4_i1uoxo.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp4_box_f5lkwa.webp",
+          "category": 2,
+          "topSale":false,
+          "description":"Add some magic to your Harry Potter collection with this Hermione Granger Funko Pop! Vinyl figure. As Ron Weasley once said, he and Harry, “wouldn’t last two days without her.” This vinyl figure of Hermione, one of the brightest witches of her age, is dressed in her school robes ready to take on everything that Hogwarts School of Witchcraft and Wizardry has to offer."
+      },
+      {
+          "id": 11,
+          "name":"Hagrid",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp5_iqvfss.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp5_box_lef0mj.webp",
+          "category": 2,
+          "topSale":false,
+          "description":"Add some magic to your Harry Potter collection with this Hagrid Funko Pop! Vinyl figures are approximately 10 cm tall and 17.4 cm tall."
+      },
+      {
+          "id": 12,
+          "name":"Dumbledore",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp6_qtagnw.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/hp/hp6_box_rxvujm.webp",
+          "category": 2,
+          "topSale":false,
+          "description":"Take a trip out of Hogwarts and visit Hogsmeade with the Pop! Town Albus Dumbledore with The Hog's Head Inn. Build Hogsmeade in your Wizarding World collection by completing the set! Vinyl figures are approximately 10 cm tall and 17.4 cm tall."
+      },
+      {
+          "id": 13,
+          "name":"Spider-Man",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077179/funkoland/marvel/marvel1_imaytv.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel1_box_qqksd8.webp",
+          "category": 3,
+          "topSale":true,
+          "description":"Defend humanity with Marvel’s Pop! Spider-Man! Complete your Marvel Studios’ Captain America: Civil War collection with this web-slinger and assemble your team to build a scene of your favourite heroes. Comprised of 12 separate figures, each Pop! in this series can be displayed on its own or nested with other figures from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favourite characters. Each figure is fixed to its base for ease of display. Each figure will be available for individual purchase, as they are announced. Figures will continue to be announced monthly and be made available throughout 2023. Vinyl bobblehead is approximately 12.5 cm tall and comes in a window display box. Find more Funko products at Amazon."
+      },
+      {
+          "id": 14,
+          "name":"Iron-Man",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel2_gvczqf.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel2_box_iih8l3.webp",
+          "category": 3,
+          "topSale":false,
+          "description":"Defend humanity with Marvel’s Pop! Iron Man! Complete your Marvel Studios’ Captain America: Civil War collection with this brilliant inventor in his red and gold suit of armor and assemble your team to build a scene of your favorite heroes. Comprised of 12 separate collectibles, each Pop! in this series can be displayed on its own or nested with others from the set. Assemble the complete battle or create your own unique scene by mixing and matching your favorite characters. Each collectible is fixed to its base for ease of display. Each Pop! will be available for individual purchase, as they are announced. Collectibles will continue to be announced monthly and be made available throughout 2023. Vinyl bobblehead is approximately 9.8 cm tall and comes in a window display box. Find more Funko products at Amazon."
+      },
+      {
+          "id": 15,
+          "name":"Thor",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel3_fvhepz.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel3_box_ge5dy7.webp",
+          "category": 3,
+          "topSale":false,
+          "description":"Electrify your Marvel collection with Entertainment Earth-exclusive Pop! Ravager Thor from Marvel Studios' Thor: Love and Thunder. Lead the charge with Pop! Ravager Thor and expand your Marvel set. Vinyl bobblehead is 10.1cm tall."
+      },
+      {
+          "id": 16,
+          "name":"Groot",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel4_mwmez8.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel4_box_nrfy3b.webp",
+          "category": 3,
+          "topSale":false,
+          "description":"Take off on a galactic adventure with dancing Pop! Groot in Onesie! Complete your I Am Groot collection with this baby Flora Colossus hero. Vinyl bobblehead is approximately 8.3 cm tall."
+      },
+      {
+          "id": 17,
+          "name":"B. Panther",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077180/funkoland/marvel/marvel5_j4hoio.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/marvel/marvel5_box_bnuthx.webp",
+          "category": 3,
+          "topSale":false,
+          "description":"Defend humanity and celebrate Disney’s 100th Anniversary with Marvel’s Pop! Black Panther! His vibranium mantle has been upgraded in this exclusive variant to a faceted suit. Strengthen your team of heroes by bringing the King of Wakanda into your Marvel collection. Vinyl bobblehead is approximately 9.6 cm tall."
+      },
+      {
+          "id": 18,
+          "name":"Thanos",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/marvel/marvel6_tdrgdm.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/marvel/marvel6_box_fbr23z.webp",
+          "category": 3,
+          "topSale":false,
+          "description":"In his quest to bring balance to the universe, Thanos has launched a plan to infiltrate your Marvel Black Light collection as a Pop! figure. Will Pop! Thanos bring balance or will the Avengers save the day? Vinyl bobblehead is approximately 13 cm tall."
+      },
+      {
+          "id": 19,
+          "name":"Verstappen",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/sports/sport1_eomtxf.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/sports/sport1_box_sbpicf.webp",
+          "category": 4,
+          "topSale":false,
+          "description":"Pop! Max Verstappen is looking to take first place in your collection! Race to add this Red Bull® Racing motorist to your Oracle Red Bull Racing collection. Vinyl figure is approximately 10 cm tall."
+      },
+      {
+          "id": 20,
+          "name":"Checo",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/sports/sport2_pupv64.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077181/funkoland/sports/sport2_box_fvtvg6.webp",
+          "category": 4,
+          "topSale":false,
+          "description":"Pop! Sergio Perez is looking to take first place in your collection! Race to add this Red Bull® Racing motorist to your Oracle Red Bull Racing collection. Vinyl figure is approximately 10 cm tall."
+      },
+      {
+          "id": 21,
+          "name":"Federer",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport3_rqwlqi.png",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport4_box_zq9zmd.png",
+          "category": 4,
+          "topSale":false,
+          "description":"Roger Federer has donned a new, legendary look! This Roger Federer Funko Pop! with a Tennis Racket is poised to serve its way into your collection. There's a 1 in 6 chance you may discover the exclusive chase variant, featuring a different outfit. Standing at approximately 10 cm tall, this vinyl figure captures the essence of the tennis icon. Chase variants are distributed randomly, and obtaining one is not guaranteed with your purchase. Get ready to add this iconic collectible to your lineup!"
+      },
+      {
+          "id": 22,
+          "name":"Nadal",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport4_r5ml0i.png",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport4_box_zq9zmd.png",
+          "category": 4,
+          "topSale":true,
+          "description":"Rafael Nadal has transformed into a legendary collectible! Introducing the Rafael Nadal Funko Pop! with Tennis Racquet, a must-have for tennis enthusiasts. Standing at approximately 10 cm tall, this vinyl figure embodies the spirit of the tennis icon in his signature attire. Don't miss the chance to uncover the exclusive chase variant, featuring a unique outfit, with a 1 in 6 odds of finding it in your purchase. Chase variants are sent randomly, and securing one is not guaranteed. Elevate your collection with this iconic representation of Rafa Nadal in action!"
+      },
+      {
+          "id": 23,
+          "name":"Lebron",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport5_gzjtdn.png",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport5_box_rj2vp3.png",
+          "category": 4,
+          "topSale":false,
+          "description":"LeBron James has arrived in Funko Pop! form, and he's ready to dominate your collection. The LeBron James Funko Pop! captures the essence of this basketball legend, standing at approximately 10 cm tall. This vinyl figure showcases LeBron in his iconic uniform, making it a must-have for fans and collectors alike."
+      },
+      {
+          "id": 24,
+          "name":"Jordan",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077182/funkoland/sports/sport6_ozfine.png",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/sports/sport6_box_t8iltf.png",
+          "category": 4,
+          "topSale":false,
+          "description":"Michael Jordan, the legendary basketball icon, is now available in Funko Pop! form. Standing at approximately 10 cm tall, this Funko Pop! captures the essence of the basketball legend, featuring his iconic Chicago Bulls uniform and signature sneakers. Whether you're a basketball enthusiast or a collector, this Michael Jordan Funko Pop! is a must-have addition to your collection. Don't miss out on the chance to own a piece of basketball history."
+      },
+      {
+          "id": 25,
+          "name":"Obi-Wan",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw1_isjr4v.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw1_box_q95p6l.webp",
+          "category": 5,
+          "topSale":false,
+          "description":"Obi-Wan Kenobi, the wise and valiant Jedi Master from the Star Wars galaxy, is now immortalized in this Funko Pop! figure. Standing at approximately 10 cm tall, this collectible showcases Obi-Wan's iconic Jedi robe and lightsaber, making it a must-have for any Star Wars fan or collector. Join Obi-Wan Kenobi on his heroic adventures and add this Pop! figure to your collection today. May the Force be with you!"
+      },
+      {
+          "id": 26,
+          "name":"D. Vader",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw2_f0vlcv.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw2_box_jgcwzm.webp",
+          "category": 5,
+          "topSale":true,
+          "description":"Darth Vader, the menacing Sith Lord from the Star Wars universe, is brought to life in this impressive Funko Pop! figure. Standing at approximately 10 cm tall, this collectible showcases Darth Vader's iconic black armor, flowing cape, and red lightsaber. Whether you're a dedicated Star Wars enthusiast or just appreciate captivating villains, this Pop! figure is a must-have addition to your collection. Join the dark side and embrace the power of the Force with Darth Vader!"
+      },
+      {
+          "id": 27,
+          "name":"Luke",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw3_flfowj.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw3_box_bhmeoe.webp",
+          "category": 5,
+          "topSale":false,
+          "description":"Luke Skywalker, the legendary Jedi Knight, is captured in a heartwarming moment as he cradles Grogu, affectionately known as The Child or Baby Yoda, in his arms. This endearing Funko Pop! figurine stands at approximately 10 cm tall and beautifully portrays Luke's likeness along with Grogu's adorable features. It's a delightful representation of the iconic duo from the Star Wars universe, making it a cherished addition to any collector's shelf. Relive the magic of Luke and Grogu's encounter with this charming Pop! figure."
+      },
+      {
+          "id": 28,
+          "name":"Leia",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077183/funkoland/starswars/sw4_gjus66.webp",
+          "imgUrlAlt": ".https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077184/funkoland/starswars/sw4_box_rckwoc.webp",
+          "category": 5,
+          "topSale":false,
+          "description":"Princess Leia, the fearless leader of the Rebel Alliance, is commemorated in this captivating Funko Pop! figure. Standing at approximately 10 cm tall, this vinyl collectible showcases Leia's unmistakable likeness, complete with her signature hairstyle and determined expression. Whether you're a lifelong Star Wars fan or a casual collector, this Pop! Leia figurine is a must-have addition to your collection. Pay tribute to the iconic heroine who played a pivotal role in the galaxy's fight for freedom with this charming piece of memorabilia."
+      },
+      {
+          "id": 29,
+          "name":"R2-D2",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077184/funkoland/starswars/sw5_cuhwf1.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077184/funkoland/starswars/sw5_box_zaiccz.webp",
+          "category": 5,
+          "topSale":false,
+          "description":"R2-D2, the beloved astromech droid from the Star Wars universe, comes to life in this charming Funko Pop! figure. Standing at approximately 10 cm tall, R2-D2 is intricately detailed with all the iconic features that make this droid a fan favorite. From its distinctive domed head to its rolling wheels, this vinyl collectible captures the essence of R2-D2's endearing character. Whether you're a dedicated Star Wars enthusiast or just starting your Funko Pop! collection, R2-D2 is a delightful addition that will bring a touch of the galaxy far, far away to your display shelf."
+      },
+      {
+          "id": 30,
+          "name":"Grievous",
+          "price":14.99,
+          "imgUrl": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077184/funkoland/starswars/sw6_vb4i50.webp",
+          "imgUrlAlt": "https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077184/funkoland/starswars/sw6_box_vjpdn8.webp",
+          "category": 5,
+          "topSale":false,
+          "description":"General Grievous, the formidable cyborg leader of the Separatist Droid Army from the Star Wars saga, is brilliantly captured in this Funko Pop! figure. Standing at approximately 10 cm tall, General Grievous showcases his distinctive design with multiple arms, lightsabers, and intricate details. This vinyl collectible perfectly encapsulates the menace and power of the character. Whether you're a die-hard Star Wars fan or a collector of unique Funko Pop! figures, General Grievous is an excellent addition to your display, showcasing one of the galaxy's most iconic villains in all his glory."
+      }
+  ]
+  }

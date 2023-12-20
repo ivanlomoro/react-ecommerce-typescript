@@ -52,7 +52,7 @@ export function Header() {
                         Welcome back, {user && user?.name + " !" || 'Guest'}
                     </span>
                     <div className="user-icon">
-                        <img src="/src/assets/imgs/animation/anime4.jpg" alt="Icon" />
+                        <img src="https://res.cloudinary.com/dgxkfjsbz/image/upload/v1703077177/funkoland/animation/anime4_qq7vhu.png" alt="Icon" />
                     </div>
 
                     <button style={{ width: "3rem", height: "3rem", position: "relative", border: "none", backgroundColor: "transparent" }} onClick={() => {
