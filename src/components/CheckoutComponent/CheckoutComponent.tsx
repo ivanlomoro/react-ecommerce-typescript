@@ -74,7 +74,7 @@ export function CheckoutComponent() {
             confirmButtonText: 'OK',
         }).then((result: SweetAlertResult) => {
             if (result.isConfirmed) {
-                window.location.href = '/home';
+                window.location.href = '/';
             }
         });
     };

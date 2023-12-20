@@ -16,7 +16,7 @@ export function Header() {
 
     const onLogout = () => {
         logout();
-        navigate("/login", {
+        navigate("/", {
             replace: true,
         });
     };
